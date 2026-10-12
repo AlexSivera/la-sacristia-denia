@@ -1,0 +1,139 @@
+{
+  "salon-baldaquino": {
+    "ratio": 0.75,
+    "widths": [
+      480,
+      760,
+      1100,
+      1500
+    ]
+  },
+  "altar-inmaculada": {
+    "ratio": 0.75,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "barra-querubin": {
+    "ratio": 1.3333333333333333,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "barra-soles": {
+    "ratio": 1.3333333333333333,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "confesionario": {
+    "ratio": 0.6,
+    "widths": [
+      480,
+      800,
+      1100
+    ]
+  },
+  "espejo-velas": {
+    "ratio": 0.75,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "bustos": {
+    "ratio": 1,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "rincon-azul": {
+    "ratio": 0.75,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "entrada": {
+    "ratio": 0.75,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "agua-vertido": {
+    "ratio": 0.8,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "agua-copas": {
+    "ratio": 0.8,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "white-cocoorange": {
+    "ratio": 0.8,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "vermut": {
+    "ratio": 0.8,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "champagne": {
+    "ratio": 0.8,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "cafe": {
+    "ratio": 0.8,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "microfono": {
+    "ratio": 1.3333333333333333,
+    "widths": [
+      600,
+      1000,
+      1500,
+      2000
+    ]
+  },
+  "velas": {
+    "ratio": 1.7777777777777777,
+    "widths": [
+      800,
+      1400,
+      2000
+    ]
+  }
+}
