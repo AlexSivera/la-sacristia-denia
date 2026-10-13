@@ -46,3 +46,6 @@ Nuevo hero «la barra como altar» (ver `docs/design-direction.md`). Comprobado 
 - Movimiento reducido: sin encendido de luces, sin barrido dorado y sin parallax.
 - La foto de la contrabarra mide 1311 px de ancho: se ve algo blanda en pantallas grandes de alta densidad. Es la primera foto que conviene hacer en la sesión.
 - Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ (390 y 1440 px): el HTML público contiene el mostrador, carga `hero-barra-m` en móvil y `hero-barra` en escritorio, el cartel «Reservado» es clicable y enlaza a `tel:`, 3 fuentes cargadas, 0 imágenes rotas, 0 errores de consola, 0 respuestas ≥ 400.
+
+## Sin arcos — 13/10/2026
+Las fotos de Aguas, Confesionario y Visita pasan de arco a marco dorado recto (el del inventario) y el número de capítulo, de cartela con arco a cartela recta. Comprobado en local a 390 y 1440 px: 0 figuras con radio, sin scroll horizontal y 0 errores de consola.

@@ -72,7 +72,7 @@ p { margin: 0; }
 .capitulo > span:first-child {
   font: italic 500 22px/1 var(--serif); letter-spacing: 0; text-transform: none;
   display: inline-grid; place-items: center; min-width: 44px; height: 44px; padding: 0 6px;
-  border: 1px solid var(--oro-50); border-radius: 22px 22px 0 0;
+  border: 1px solid var(--oro-50); outline: 1px solid var(--oro-25); outline-offset: 3px;
 }
 
 .btn {
@@ -96,11 +96,6 @@ p { margin: 0; }
   transition: background .3s, color .3s;
 }
 .flecha:hover { background: var(--oro); color: var(--noche); }
-
-/* Hornacina: arco de medio punto + doble filete dorado */
-.arco { position: relative; margin: 0; overflow: hidden; border-top-left-radius: 50vmax; border-top-right-radius: 50vmax; background: var(--noche-2);
-  box-shadow: 0 0 0 1px var(--oro-50), 0 0 0 7px var(--noche), 0 0 0 8px var(--oro-25); }
-.arco img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Marco recto de cuadro */
 .marco { margin: 0; position: relative; background: var(--noche-2);
@@ -353,7 +348,7 @@ body.menu-abierto { overflow: hidden; }
   -webkit-background-clip: text; background-clip: text;
 }
 .aguas__grid { display: grid; gap: 44px; }
-.arco--agua { width: min(84vw, 440px); aspect-ratio: 4 / 5; justify-self: center; }
+.aguas__foto { width: min(84vw, 440px); aspect-ratio: 4 / 5; justify-self: center; }
 .aguas__texto { display: grid; gap: 34px; align-content: start; }
 .aguas__lead { font: 400 clamp(22px, 5.4vw, 31px)/1.32 var(--serif); }
 .aguas__lead strong { font-weight: 400; font-style: italic; color: var(--agua); }
@@ -393,7 +388,7 @@ body.menu-abierto { overflow: hidden; }
 }
 .carta > * { max-width: var(--ancho); margin-left: auto; margin-right: auto; }
 .carta .capitulo { color: #8a6a2c; }
-.carta .capitulo > span:first-child { border-color: rgba(138, 106, 44, .5); }
+.carta .capitulo > span:first-child { border-color: rgba(138, 106, 44, .5); outline-color: rgba(138, 106, 44, .28); }
 .carta__titulo { font: 400 clamp(42px, 11vw, 104px)/.98 var(--serif); letter-spacing: -.03em; }
 .carta__titulo em { color: var(--carmesi); }
 .carta__nota { margin-top: 18px; color: rgba(28, 20, 24, .7); font-size: 15px; }
@@ -429,7 +424,7 @@ body.menu-abierto { overflow: hidden; }
 .confesion__fondo img { width: 100%; height: 100%; object-fit: cover; }
 .confesion__fondo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, var(--noche) 0%, rgba(14,11,13,.5) 40%, var(--noche) 100%); }
 .confesion__grid { position: relative; display: grid; gap: 48px; max-width: var(--ancho); margin: 0 auto; }
-.arco--confesion { width: min(58vw, 300px); aspect-ratio: 3 / 5; justify-self: center; }
+.confesion__foto { width: min(58vw, 300px); aspect-ratio: 3 / 5; justify-self: center; }
 .confesion__titulo { font: 400 clamp(36px, 9vw, 72px)/1.02 var(--serif); letter-spacing: -.02em; }
 .confesion__titulo em { display: block; color: var(--oro-claro); }
 .dialogo { margin: 26px 0 22px; display: grid; gap: 4px; font: italic 400 18px/1.4 var(--serif); color: var(--cera-70); }
@@ -496,7 +491,7 @@ body.menu-abierto { overflow: hidden; }
   display: grid; gap: 54px; padding: 104px var(--margen) 110px;
   background: linear-gradient(180deg, var(--noche), var(--petroleo) 30%, var(--petroleo-2));
 }
-.arco--visita { width: min(84vw, 460px); aspect-ratio: 3 / 4; justify-self: center; }
+.visita__foto { width: min(84vw, 460px); aspect-ratio: 3 / 4; justify-self: center; }
 .visita__info { display: grid; gap: 26px; align-content: start; }
 .visita__info .capitulo { margin-bottom: 0; }
 .visita__titulo { font: 400 clamp(56px, 16vw, 132px)/.9 var(--serif); letter-spacing: -.035em; }
@@ -591,7 +586,7 @@ body.menu-abierto { overflow: hidden; }
 
   .aguas__titulo { margin-bottom: 80px; }
   .aguas__grid { grid-template-columns: 5fr 5fr 3fr; align-items: start; gap: 4.5vw; }
-  .arco--agua { width: 100%; }
+  .aguas__foto { width: 100%; }
   .aguas__texto { padding-top: 40px; }
   .aguas__copas { width: 100%; margin-top: 46%; }
   .familia { display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; }
@@ -609,7 +604,7 @@ body.menu-abierto { overflow: hidden; }
   .platos__tag { grid-column: 3; grid-row: 1; margin-top: 4px; }
 
   .confesion__grid { grid-template-columns: 4fr 7fr; gap: 8vw; align-items: center; }
-  .arco--confesion { width: 100%; }
+  .confesion__foto { width: 100%; }
 
   .jueves { display: grid; grid-template-columns: 1fr 1fr; min-height: 92vh; }
   .jueves__foto { order: 2; aspect-ratio: auto; }
@@ -617,7 +612,7 @@ body.menu-abierto { overflow: hidden; }
   .jueves__texto { padding: 120px var(--margen) 110px; align-content: center; }
 
   .visita { grid-template-columns: 5fr 6fr; gap: 8vw; align-items: start; }
-  .arco--visita { width: 100%; position: sticky; top: 110px; }
+  .visita__foto { width: 100%; position: sticky; top: 110px; }
   .visita__ctas { grid-auto-flow: column; }
 
   .pie { padding-bottom: 72px; }

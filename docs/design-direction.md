@@ -1,7 +1,7 @@
 # Dirección artística — "Retablo"
 
 ## En una frase
-La web se compone como un **retablo barroco** y un **catálogo de museo** a la vez: el local real aparece en hornacinas (arcos) y marcos de filete dorado, cada objeto y cada bebida lleva una cartela numerada, y la voz es la del propio local —feligreses, aguas espirituosas, confesionario— con humor. Un solo color viene de fuera de las paredes: **el turquesa del Agua de Dénia**.
+La web se compone como un **retablo barroco** y un **catálogo de museo** a la vez: el local real aparece en marcos de cuadro rectos con doble filete dorado, cada objeto y cada bebida lleva una cartela numerada, y la voz es la del propio local —feligreses, aguas espirituosas, confesionario— con humor. Un solo color viene de fuera de las paredes: **el turquesa del Agua de Dénia**.
 
 ## Por qué
 - El producto **es el espacio**: es lo más citado en las reseñas ("obra de arte", "museo", "Dalí rediseñando Versalles en Dénia").
@@ -12,7 +12,7 @@ La web se compone como un **retablo barroco** y un **catálogo de museo** a la v
 ## Hero: la barra como altar
 El hero sale de un objeto físico del local, no de una plantilla. Arriba, la **contrabarra real** (foto frontal entre los dos soles dorados y los pilares de ladrillo del antiguo garaje), a sangre y sin marco. Abajo, el **frontal del mostrador** dibujado en CSS, que continúa el mostrador de la foto: tablero de madera con filo de latón, el nombre grabado en pan de oro (con un barrido de luz al cargar), paneles con moldura dorada, una placa de latón atornillada («Antiguo garaje de autobuses · Sacristía desde MMXXI») y la barra de pies con sus soportes. De pie sobre el tablero, el **cartelito de «Reservado»**: es la CTA principal, «Reservar mesa», que llama al local. Al cargar, la foto pasa de penumbra a luz, como si se encendieran las lámparas, y al hacer scroll el mostrador sube por delante de la contrabarra.
 
-Se descartaron a propósito los esquemas de las otras demos del estudio: texto a la izquierda y foto en arco a la derecha (Boreal), fotos en círculo con marcadores numerados (Niki) y rótulo centrado sobre escaparate en paneles con franja inferior de CTA (Bernie’s). En el hero no hay fotos con arco.
+Se descartaron a propósito los esquemas de las otras demos del estudio: texto a la izquierda y foto en arco a la derecha (Boreal), fotos en círculo con marcadores numerados (Niki) y rótulo centrado sobre escaparate en paneles con franja inferior de CTA (Bernie’s). En toda la web no hay fotos con arco (el arco era la firma de Boreal): las fotos van a sangre o en marco dorado recto.
 
 ## Personalidad y emoción
 Teatral, generosa, cómplice. Primero asombro ("¿esto está en Dénia?"), luego guiño (el confesionario recomienda copas), luego ganas de ir esta noche.
@@ -36,7 +36,7 @@ Teatral, generosa, cómplice. Primero asombro ("¿esto está en Dénia?"), luego
 Real como protagonista (nivel 1–2): el salón del baldaquino, el altar de la Inmaculada, el confesionario, la barra de los soles, el espejo con velas, bustos, Agua de Dénia en garrafa, White Cocoorange, vermut. Etalonaje común: negros profundos, velo cálido de vela, menos saturación de móvil. Stock solo donde no hay material real presentable: micrófono (jueves de directo) y velas (confesionario).
 
 ## Composición y ritmo
-Oscuro → oscuro petróleo → **explosión turquesa** → papel de cera (carta, la única sección clara) → confesionario en penumbra → noche de directo → reseñas → visita. Arcos en hero, historia y visita; marcos rectos con doble filete en el catálogo.
+Oscuro → oscuro petróleo → **explosión turquesa** → papel de cera (carta, la única sección clara) → confesionario en penumbra → noche de directo → reseñas → visita. Marcos rectos con doble filete dorado en todas las fotos enmarcadas; en el inventario, además, lámpara de cuadro de latón. Los números de capítulo van en una cartela recta con doble filete.
 
 ## Botones
 Rectangulares con doble filete dorado (marco de cuadro), versalitas Jost. Primario relleno oro sobre noche. Nada de píldoras redondeadas.

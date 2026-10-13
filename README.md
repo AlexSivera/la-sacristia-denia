@@ -1,7 +1,7 @@
 # La Sacristía · Dénia — demo web
 
 Propuesta de web para La Sacristía, café de arte y coctelería en C/ Pare Pere 4, Dénia.
-Concepto: **Retablo** — el local real en hornacinas y marcos dorados, cartelas de museo para cada pieza y cada copa, la voz del propio local (feligreses, aguas espirituosas, confesionario) y un único color ajeno a sus paredes: el turquesa del Agua de Dénia. Ver `docs/`.
+Concepto: **Retablo** — el local real en marcos de cuadro dorados, cartelas de museo para cada pieza y cada copa, la voz del propio local (feligreses, aguas espirituosas, confesionario) y un único color ajeno a sus paredes: el turquesa del Agua de Dénia. Ver `docs/`.
 
 ## Uso
 
