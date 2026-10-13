@@ -34,3 +34,15 @@ Pruebas ejecutadas con Playwright (Chromium) sobre `dist/` servido en local y, d
 ## Publicación
 - https://alexsivera.github.io/la-sacristia-denia/ — rama `gh-pages`, estado `built`, HTTP 200.
 - Verificado en la URL pública (390 px y 1440 px): CSS aplicado, Bodoni Moda (normal y cursiva) y Jost cargadas, 20 imágenes sin ninguna rota, JS activo, `assets/og.jpg` 200, 0 errores de consola y 0 respuestas ≥ 400.
+
+
+## Rediseño del hero — 13/10/2026
+Nuevo hero «la barra como altar» (ver `docs/design-direction.md`). Comprobado en local con Playwright:
+- Sin scroll horizontal a 320, 390, 768, 1024 y 1440 px; ninguna imagen rota; 0 errores de consola.
+- Móvil 390 × 844: la primera pantalla muestra la contrabarra, el cartel «Reservado · Reservar mesa», el nombre y el estado de apertura.
+- CTA: el cartel no lo tapa nada (`elementFromPoint`), 158 × 116 px en móvil, enlaza a `tel:+34865592759`.
+- Teclado: marca → menú → Reservar mesa → Ver la carta.
+- `<picture>`: el móvil carga `hero-barra-m` (vertical) y el escritorio `hero-barra` (panorámica).
+- Movimiento reducido: sin encendido de luces, sin barrido dorado y sin parallax.
+- La foto de la contrabarra mide 1311 px de ancho: se ve algo blanda en pantallas grandes de alta densidad. Es la primera foto que conviene hacer en la sesión.
+- Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ (390 y 1440 px): el HTML público contiene el mostrador, carga `hero-barra-m` en móvil y `hero-barra` en escritorio, el cartel «Reservado» es clicable y enlaza a `tel:`, 3 fuentes cargadas, 0 imágenes rotas, 0 errores de consola, 0 respuestas ≥ 400.
