@@ -27,6 +27,9 @@ for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) {
   if (/data-img=/.test(tag)) errores.push(`img sin expandir: ${tag.slice(0, 80)}`);
   if (!/\swidth="\d+"/.test(tag)) errores.push(`img sin width/height: ${tag.slice(0, 80)}`);
 }
+for (const [tag] of html.matchAll(/<source\b[^>]*>/g)) {
+  if (/data-img=/.test(tag) || !/srcset=/.test(tag)) errores.push(`source sin expandir: ${tag.slice(0, 80)}`);
+}
 if (html.includes('{{')) errores.push('Placeholder {{…}} sin sustituir');
 const idsDup = [...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]).filter((v, i, a) => a.indexOf(v) !== i);
 if (idsDup.length) errores.push(`ids duplicados: ${idsDup.join(', ')}`);
@@ -34,7 +37,7 @@ try { JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/s
 
 // Peso aproximado inicial: HTML + CSS + JS + fuentes precargadas + imagen del hero (800w)
 let kb = 0;
-for (const f of ['index.html', 'styles.css', 'main.js', 'assets/fonts/bodoni-moda.woff2', 'assets/fonts/bodoni-moda-italic.woff2', 'assets/fonts/jost.woff2', 'assets/img/salon-baldaquino-760.webp']) {
+for (const f of ['index.html', 'styles.css', 'main.js', 'assets/fonts/bodoni-moda.woff2', 'assets/fonts/bodoni-moda-italic.woff2', 'assets/fonts/jost.woff2', 'assets/img/hero-barra-m-655.webp']) {
   kb += (await fs.stat(path.join(OUT, f))).size / 1024;
 }
 console.log(`Recursos locales: ${locales.size} · anclas: ${ids.size} · primera carga ≈ ${Math.round(kb)} KB`);

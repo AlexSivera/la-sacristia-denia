@@ -93,35 +93,42 @@
 
   <main id="contenido">
 
-    <!-- ============ ENTRADA ============ -->
+    <!-- ============ ENTRADA: la barra como altar ============ -->
     <section class="hero" id="inicio" aria-labelledby="titulo">
-      <div class="hero__texto">
-        <p class="inscripcion">Café <i>·</i> La Sacristía <i>·</i> MMXXI</p>
-        <h1 class="hero__titulo" id="titulo">
-          <span class="hero__la">La</span>
-          <span class="hero__nombre">Sacristía</span>
-          <span class="hero__sub">Coctelería y café de arte en Dénia</span>
-        </h1>
-        <p class="hero__lead">Un antiguo garaje del centro de Dénia convertido por restauradores de arte en un museo barroco donde se sirven cócteles. Terciopelo, pan de oro, una Inmaculada del siglo&nbsp;XVII junto a la barra… y el <em>Agua de Dénia</em>, que solo se sirve aquí.</p>
-        <p class="estado" data-estado><span class="estado__punto" aria-hidden="true"></span><span data-estado-txt>Abrimos todos los días por la tarde</span></p>
-        <div class="hero__ctas">
-          <a class="btn btn--oro" href="tel:+34865592759">Reservar mesa</a>
-          <a class="btn" href="#carta">Ver la carta</a>
+      <div class="contrabarra">
+        <picture>
+          <source media="(min-width: 760px)" data-img="hero-barra" sizes="100vw">
+          <img data-img="hero-barra-m" sizes="100vw" alt="La barra de La Sacristía entre dos soles dorados y pilares de ladrillo del antiguo garaje, con lámparas de cristal, cartelas doradas y cortinaje de terciopelo rojo" loading="eager" fetchpriority="high">
+        </picture>
+        <span class="vela" aria-hidden="true"></span>
+      </div>
+
+      <div class="mostrador">
+        <a class="reservado" href="tel:+34865592759" aria-label="Reservar mesa: llamar al 865 59 27 59">
+          <span class="reservado__kicker" aria-hidden="true">Reservado</span>
+          <span class="reservado__accion">Reservar mesa</span>
+          <span class="reservado__tel">865 59 27 59</span>
+        </a>
+
+        <div class="frente">
+          <div class="frente__nombre">
+            <h1 class="hero__titulo" id="titulo">
+              <span class="hero__la">La</span>
+              <span class="hero__nombre">Sacristía</span>
+              <span class="hero__sub">Coctelería y café de arte · Dénia</span>
+            </h1>
+            <p class="estado" data-estado><span class="estado__punto" aria-hidden="true"></span><span data-estado-txt>Abrimos todos los días por la tarde</span></p>
+          </div>
+          <div class="frente__panel frente__panel--texto">
+            <p class="hero__lead">Restauradores de arte convirtieron un garaje del centro de Dénia en un museo barroco con barra. Terciopelo, pan de oro, una Inmaculada del siglo&nbsp;XVII… y el <em>Agua de Dénia</em>, que solo se sirve aquí.</p>
+            <a class="hero__carta" href="#carta">Ver la carta <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="frente__panel frente__panel--placa">
+            <p class="placa">Antiguo garaje de autobuses <strong>Sacristía desde MMXXI</strong></p>
+          </div>
         </div>
+        <span class="reposapies" aria-hidden="true"></span>
       </div>
-
-      <div class="hero__retablo" aria-hidden="false">
-        <figure class="arco arco--hero">
-          <img data-img="salon-baldaquino" sizes="(min-width: 1024px) 38vw, 82vw" alt="Salón de La Sacristía: baldaquino de terciopelo rojo, cuadro con marco dorado, flores, sillones isabelinos y mesas de mármol" loading="eager" fetchpriority="high">
-          <span class="vela" aria-hidden="true"></span>
-        </figure>
-        <figure class="arco arco--lateral">
-          <img data-img="altar-inmaculada" sizes="(min-width: 1024px) 14vw, 30vw" alt="Altar de la Inmaculada entre cortinajes azules, con velas y flores">
-        </figure>
-        <p class="hero__vertical" aria-hidden="true">Pare Pere · 4 · Dénia</p>
-      </div>
-
-      <a class="hero__pase" href="#museo">Pase y vea</a>
     </section>
 
     <!-- ============ I · EL MUSEO ============ -->

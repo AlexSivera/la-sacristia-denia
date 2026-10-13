@@ -47,8 +47,11 @@ const hero = $('.hero');
 const pie = $('.pie');
 let pieVisible = false;
 if (pie) new IntersectionObserver(([e]) => { pieVisible = e.isIntersecting; onScroll(); }).observe(pie);
+const fotoBarra = $(".contrabarra img");
 function onScroll() {
   const y = scrollY;
+  // la contrabarra se queda atrás: el mostrador sube por delante
+  if (fotoBarra && !quieto && y < innerHeight * 1.2) fotoBarra.style.setProperty("--py", `${Math.round(y * 0.3)}px`);
   cabecera.classList.toggle('is-solida', y > 40);
   if (barra && hero) barra.classList.toggle('is-visible', y > 320 && !pieVisible);
 }

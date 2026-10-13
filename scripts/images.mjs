@@ -8,11 +8,14 @@ import fs from 'node:fs/promises';
 
 const OUT = 'src/assets/img';
 
+// area: [x, y, ancho, alto] en fracciones — zona de la foto de la que se parte (opcional)
 // ratio: recorte final (ancho/alto) · foco: punto 0–1 hacia el que se desplaza el recorte
 // grade: vela (fotos reales del local, unificadas) · bn (blanco y negro) · stock (provisionales)
 const FOTOS = {
   // — Fotos reales de La Sacristía (Google Maps, TripAdvisor, Instagram) —
-  'salon-baldaquino': { src: 'real/maps-6.jpg', ratio: 3 / 4, foco: [0.56, 0.5], grade: 'vela', sizes: [480, 760, 1100, 1500] },
+  // Hero: la contrabarra, por encima del mostrador real (que continúa el mostrador dibujado en CSS)
+  'hero-barra':       { src: 'ta/ta-12-bello.jpg', area: [0, 0, 1, 0.73], ratio: 1311 / 718, foco: [0.5, 1], grade: 'vela', sizes: [800, 1311] },
+  'hero-barra-m':     { src: 'ta/ta-12-bello.jpg', area: [0.25, 0, 0.5, 0.73], ratio: 655 / 718, foco: [0.5, 1], grade: 'vela', sizes: [480, 655] },
   'altar-inmaculada': { src: 'real/maps-5.jpg', ratio: 3 / 4, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'barra-querubin':   { src: 'real/maps-4.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200, 1600] },
   'barra-soles':      { src: 'ta/ta-12-bello.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
@@ -36,14 +39,23 @@ const FOTOS = {
 // Velo cálido en "soft-light": acerca la temperatura de fuentes distintas a la luz de vela del local
 const VELO = { vela: [255, 196, 128, 0.16], stock: [255, 190, 120, 0.2], bn: [0, 0, 0, 0] };
 
-async function preparar({ src, ratio, foco: [fx, fy], grade }) {
-  const base = sharp(`raw/${src}`).rotate();
+async function fuente(src, area) {
+  const img = sharp(`raw/${src}`).rotate();
+  if (!area) return img;
+  const { width: W, height: H } = await img.metadata();
+  const [ax, ay, aw, ah] = area;
+  const buf = await img.extract({ left: Math.round(ax * W), top: Math.round(ay * H), width: Math.round(aw * W), height: Math.round(ah * H) }).toBuffer();
+  return sharp(buf);
+}
+
+async function preparar({ src, area, ratio, foco: [fx, fy], grade }) {
+  const base = await fuente(src, area);
   const { width: w, height: h } = await base.metadata();
   let cw = w, ch = Math.round(w / ratio);
   if (ch > h) { ch = h; cw = Math.round(h * ratio); }
   const left = Math.round(Math.max(0, Math.min(w - cw, fx * w - cw / 2)));
   const top = Math.round(Math.max(0, Math.min(h - ch, fy * h - ch / 2)));
-  let img = sharp(`raw/${src}`).rotate().extract({ left, top, width: cw, height: ch }).removeAlpha();
+  let img = (await fuente(src, area)).extract({ left, top, width: cw, height: ch }).removeAlpha();
 
   if (grade === 'bn') return { buf: await img.grayscale().linear(1.08, -6).toBuffer(), cw };
   // Fotos de móvil: menos saturación y negros más profundos, como en penumbra
@@ -72,7 +84,7 @@ for (const [nombre, def] of Object.entries(FOTOS)) {
 }
 
 // Imagen para compartir (Open Graph): el salón, apaisado
-const og = await preparar({ ...FOTOS['salon-baldaquino'], ratio: 1200 / 630, foco: [0.5, 0.42] });
+const og = await preparar({ src: 'real/maps-6.jpg', grade: 'vela', ratio: 1200 / 630, foco: [0.5, 0.42] });
 await sharp(og.buf).resize(1200, 630).jpeg({ quality: 80, mozjpeg: true }).toFile('src/assets/og.jpg');
 
 await fs.writeFile(`${OUT}/sizes.json`, JSON.stringify(Object.fromEntries(

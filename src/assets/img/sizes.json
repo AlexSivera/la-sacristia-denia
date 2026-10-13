@@ -1,11 +1,16 @@
 {
-  "salon-baldaquino": {
-    "ratio": 0.75,
+  "hero-barra": {
+    "ratio": 1.8259052924791086,
+    "widths": [
+      800,
+      1311
+    ]
+  },
+  "hero-barra-m": {
+    "ratio": 0.9122562674094707,
     "widths": [
       480,
-      760,
-      1100,
-      1500
+      655
     ]
   },
   "altar-inmaculada": {

@@ -9,6 +9,11 @@ La web se compone como un **retablo barroco** y un **catálogo de museo** a la v
 - El tono eclesiástico **ya es suyo** ("para nuestros feligreses", "agua espirituosa"), no es una metáfora impuesta.
 - El Agua de Dénia es su bebida única y es turquesa: es el único elemento que puede romper la paleta del local y convertirse en marca.
 
+## Hero: la barra como altar
+El hero sale de un objeto físico del local, no de una plantilla. Arriba, la **contrabarra real** (foto frontal entre los dos soles dorados y los pilares de ladrillo del antiguo garaje), a sangre y sin marco. Abajo, el **frontal del mostrador** dibujado en CSS, que continúa el mostrador de la foto: tablero de madera con filo de latón, el nombre grabado en pan de oro (con un barrido de luz al cargar), paneles con moldura dorada, una placa de latón atornillada («Antiguo garaje de autobuses · Sacristía desde MMXXI») y la barra de pies con sus soportes. De pie sobre el tablero, el **cartelito de «Reservado»**: es la CTA principal, «Reservar mesa», que llama al local. Al cargar, la foto pasa de penumbra a luz, como si se encendieran las lámparas, y al hacer scroll el mostrador sube por delante de la contrabarra.
+
+Se descartaron a propósito los esquemas de las otras demos del estudio: texto a la izquierda y foto en arco a la derecha (Boreal), fotos en círculo con marcadores numerados (Niki) y rótulo centrado sobre escaparate en paneles con franja inferior de CTA (Bernie’s). En el hero no hay fotos con arco.
+
 ## Personalidad y emoción
 Teatral, generosa, cómplice. Primero asombro ("¿esto está en Dénia?"), luego guiño (el confesionario recomienda copas), luego ganas de ir esta noche.
 

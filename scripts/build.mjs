@@ -30,6 +30,14 @@ html = html.replace(/<img\b([^>]*?)\sdata-img="([^"]+)"([^>]*)>/g, (m, a, nombre
   const dec = /decoding=/.test(resto) ? '' : ' decoding="async"';
   return `<img src="assets/img/${nombre}-${def}.webp" srcset="${srcset}" width="${mayor}" height="${alto}"${resto}${lazy}${dec}>`;
 });
+// <source data-img="nombre" media="…" sizes="…"> → srcset (encuadres distintos por ancho dentro de <picture>)
+html = html.replace(/<source\b([^>]*?)\sdata-img="([^"]+)"([^>]*)>/g, (m, a, nombre, c) => {
+  const t = tallas[nombre];
+  if (!t) { faltan.add(nombre); return m; }
+  const srcset = t.widths.map((w) => `assets/img/${nombre}-${w}.webp ${w}w`).join(', ');
+  const alto = Math.round(t.widths[t.widths.length - 1] / t.ratio);
+  return `<source srcset="${srcset}" width="${t.widths[t.widths.length - 1]}" height="${alto}"${a}${c}>`;
+});
 if (faltan.size) throw new Error(`Imágenes sin procesar: ${[...faltan].join(', ')} (ejecuta npm run images)`);
 
 html = html.replaceAll('{{SITE_URL}}', SITE_URL)
