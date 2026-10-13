@@ -200,8 +200,11 @@
       <h2 class="aguas__titulo" id="aguas-titulo" data-agua>Agua <em>de</em> Dénia</h2>
 
       <div class="aguas__grid">
-        <figure class="marco aguas__foto revela">
-          <img data-img="agua-vertido" sizes="(min-width: 1024px) 32vw, 84vw" alt="Agua de Dénia de color turquesa vertida desde una garrafa a una copa alta">
+        <figure class="estampa aguas__foto revela">
+          <div class="estampa__papel">
+            <img data-img="agua-vertido" sizes="(min-width: 1024px) 28vw, 70vw" alt="Agua de Dénia de color turquesa vertida desde una garrafa a una copa alta">
+            <figcaption class="estampa__pie"><span class="estampa__nombre">Agua de Dénia</span><span class="estampa__recuerdo">Recuerdo de La Sacristía</span></figcaption>
+          </div>
         </figure>
 
         <div class="aguas__texto">
@@ -223,8 +226,11 @@
           <p class="aguas__garrafa revela">Se sirve en garrafa, para compartir. <em>Y solo aquí.</em></p>
         </div>
 
-        <figure class="aguas__copas marco revela">
-          <img data-img="agua-copas" sizes="(min-width: 1024px) 22vw, 60vw" alt="Dos copas altas de Agua de Dénia sobre una mesa de mármol, con el salón dorado desenfocado al fondo">
+        <figure class="estampa estampa--chica aguas__copas revela">
+          <div class="estampa__papel">
+            <img data-img="agua-copas" sizes="(min-width: 1024px) 18vw, 46vw" alt="Dos copas altas de Agua de Dénia sobre una mesa de mármol, con el salón dorado desenfocado al fondo">
+            <figcaption class="estampa__pie"><span class="estampa__nombre">Para dos</span></figcaption>
+          </div>
         </figure>
       </div>
 
@@ -310,8 +316,14 @@
     <section class="confesion" id="confesionario" aria-labelledby="confesion-titulo">
       <figure class="confesion__fondo" aria-hidden="true"><img data-img="velas" sizes="100vw" alt=""></figure>
       <div class="confesion__grid">
-        <figure class="marco confesion__foto revela">
-          <img data-img="confesionario" sizes="(min-width: 1024px) 26vw, 56vw" alt="El confesionario de La Sacristía, con una casulla morada colgada">
+        <figure class="mueble confesion__foto revela" data-mueble>
+          <span class="mueble__cornisa" aria-hidden="true"></span>
+          <div class="mueble__hueco">
+            <img data-img="confesionario" sizes="(min-width: 1024px) 22vw, 54vw" alt="El confesionario de La Sacristía, con una casulla morada colgada">
+            <span class="mueble__hoja mueble__hoja--izq" aria-hidden="true"></span>
+            <span class="mueble__hoja mueble__hoja--der" aria-hidden="true"></span>
+          </div>
+          <span class="mueble__zocalo" aria-hidden="true"></span>
         </figure>
         <div class="confesion__panel">
           <p class="capitulo"><span>IV</span> El confesionario</p>
@@ -391,8 +403,15 @@
 
     <!-- ============ VII · LA VISITA ============ -->
     <section class="visita" id="visita" aria-labelledby="visita-titulo">
-      <figure class="marco visita__foto revela">
-        <img data-img="entrada" sizes="(min-width: 1024px) 34vw, 84vw" alt="La puerta abierta de La Sacristía bajo el rótulo «Café La Sacristía MMXXI», con el salón iluminado al fondo">
+      <figure class="exvoto visita__foto revela">
+        <div class="exvoto__escena">
+          <img data-img="entrada" sizes="(min-width: 1024px) 32vw, 78vw" alt="La puerta abierta de La Sacristía bajo el rótulo «Café La Sacristía MMXXI», con el salón iluminado al fondo">
+        </div>
+        <figcaption class="exvoto__texto">
+          <span class="exvoto__titulo">Ex-voto</span>
+          Al viajero que buscaba en Dénia dónde tomar algo distinto: subió a lo alto de Marqués de Campo, entró por la calle Pare Pere, número 4, y vio el milagro.
+          <span class="exvoto__fecha">Dénia · año MMXXI</span>
+        </figcaption>
       </figure>
       <div class="visita__info">
         <p class="capitulo"><span>VII</span> La visita</p>

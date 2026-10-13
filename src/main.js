@@ -169,6 +169,8 @@ const ABSOLUCIONES = [
 const abs = $('[data-absolucion]');
 $$('[data-pecado]').forEach((b) => b.addEventListener('click', () => {
   const a = ABSOLUCIONES[+b.dataset.pecado];
+  const mueble = $('[data-mueble]');
+  if (mueble && !quieto) { mueble.classList.add('is-cerrado'); setTimeout(() => mueble.classList.remove('is-cerrado'), 650); }
   $$('[data-pecado]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
   $('[data-abs-copa]').textContent = a.copa;
   $('[data-abs-desc]').textContent = a.desc;

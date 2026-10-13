@@ -50,3 +50,11 @@ Nuevo hero «la barra como altar» (ver `docs/design-direction.md`). Comprobado 
 ## Sin arcos — 13/10/2026
 Las fotos de Aguas, Confesionario y Visita pasan de arco a marco dorado recto (el del inventario) y el número de capítulo, de cartela con arco a cartela recta. Comprobado en local a 390 y 1440 px: 0 figuras con radio, sin scroll horizontal y 0 errores de consola.
 - Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ (390 y 1440 px): las tres fotos en marco recto (radio 0) cargan (`agua-vertido`, `confesionario`, `entrada`), 0 figuras redondeadas, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
+
+## Objetos en Aguas, Confesionario y Visita — 13/10/2026
+Estampas con puntilla, confesionario con portezuelas de celosía y ex-voto de hojalata. Comprobado en local con Playwright:
+- 390 y 1440 px revisados en captura; sin scroll horizontal a 320 px (las portezuelas abiertas no desbordan).
+- Portezuelas: 104° abiertas al aparecer; al pulsar una opción se cierran (0° a los 420 ms) y se reabren con la absolución.
+- Movimiento reducido: portezuelas abiertas desde el inicio y sin cierre al confesar.
+- 0 errores de consola.
+- Nota de QA: con `scroll-behavior: smooth`, `scrollIntoView` en las pruebas tarda en llegar a las secciones lejanas; las capturas se repitieron con scroll instantáneo. No afecta al usuario.

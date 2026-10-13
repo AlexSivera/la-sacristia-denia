@@ -348,7 +348,7 @@ body.menu-abierto { overflow: hidden; }
   -webkit-background-clip: text; background-clip: text;
 }
 .aguas__grid { display: grid; gap: 44px; }
-.aguas__foto { width: min(84vw, 440px); aspect-ratio: 4 / 5; justify-self: center; }
+.aguas__foto { width: min(80vw, 400px); justify-self: center; }
 .aguas__texto { display: grid; gap: 34px; align-content: start; }
 .aguas__lead { font: 400 clamp(22px, 5.4vw, 31px)/1.32 var(--serif); }
 .aguas__lead strong { font-weight: 400; font-style: italic; color: var(--agua); }
@@ -370,7 +370,7 @@ body.menu-abierto { overflow: hidden; }
 .sellos__resp { margin-top: 16px; font: italic 400 18px/1.3 var(--serif); color: var(--cera-70); min-height: 1.3em; }
 .aguas__garrafa { font: 400 19px/1.4 var(--serif); }
 .aguas__garrafa em { color: var(--agua); }
-.aguas__copas { width: 62%; aspect-ratio: 4 / 5; justify-self: end; margin-top: -10px; }
+.aguas__copas { width: 56%; justify-self: end; margin-top: -10px; }
 
 .familia { margin-top: 84px; border-top: 1px solid var(--oro-25); padding-top: 26px; }
 .familia__titulo { font: 500 11px/1 var(--sans); letter-spacing: .3em; text-transform: uppercase; color: var(--oro); margin-bottom: 10px; }
@@ -424,7 +424,7 @@ body.menu-abierto { overflow: hidden; }
 .confesion__fondo img { width: 100%; height: 100%; object-fit: cover; }
 .confesion__fondo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, var(--noche) 0%, rgba(14,11,13,.5) 40%, var(--noche) 100%); }
 .confesion__grid { position: relative; display: grid; gap: 48px; max-width: var(--ancho); margin: 0 auto; }
-.confesion__foto { width: min(58vw, 300px); aspect-ratio: 3 / 5; justify-self: center; }
+.confesion__foto { width: min(64vw, 310px); justify-self: center; }
 .confesion__titulo { font: 400 clamp(36px, 9vw, 72px)/1.02 var(--serif); letter-spacing: -.02em; }
 .confesion__titulo em { display: block; color: var(--oro-claro); }
 .dialogo { margin: 26px 0 22px; display: grid; gap: 4px; font: italic 400 18px/1.4 var(--serif); color: var(--cera-70); }
@@ -491,7 +491,7 @@ body.menu-abierto { overflow: hidden; }
   display: grid; gap: 54px; padding: 104px var(--margen) 110px;
   background: linear-gradient(180deg, var(--noche), var(--petroleo) 30%, var(--petroleo-2));
 }
-.visita__foto { width: min(84vw, 460px); aspect-ratio: 3 / 4; justify-self: center; }
+.visita__foto { width: min(86vw, 460px); justify-self: center; }
 .visita__info { display: grid; gap: 26px; align-content: start; }
 .visita__info .capitulo { margin-bottom: 0; }
 .visita__titulo { font: 400 clamp(56px, 16vw, 132px)/.9 var(--serif); letter-spacing: -.035em; }
@@ -511,6 +511,93 @@ body.menu-abierto { overflow: hidden; }
 .datos li { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--oro-25); font-size: 15.5px; overflow-wrap: anywhere; }
 .datos span { font: 500 10.5px/1.9 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--oro); }
 .datos a { text-decoration-color: var(--oro-50); text-underline-offset: 3px; }
+
+
+/* ---------- objetos del local: estampa, confesionario, ex-voto ---------- */
+
+/* Estampa con puntilla de papel calado (recordatorio) */
+.estampa { margin: 0; position: relative; rotate: -2.4deg; filter: drop-shadow(0 18px 26px rgba(0, 0, 0, .55)); }
+.estampa--chica { rotate: 3.2deg; }
+.estampa__papel { transition: rotate .7s var(--ease), translate .7s var(--ease); }
+.estampa:hover .estampa__papel { rotate: 2deg; translate: 0 -4px; }
+.estampa--chica:hover .estampa__papel { rotate: -3deg; }
+.estampa__papel {
+  display: grid; gap: 12px; padding: 8px 8px 12px;
+  border: 22px solid transparent; border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='72' height='72' fill='black'/%3E%3Cg fill='white'%3E%3Crect x='12' y='12' width='48' height='48'/%3E%3Ccircle cx='12' cy='12' r='12'/%3E%3Ccircle cx='36' cy='12' r='12'/%3E%3Ccircle cx='60' cy='12' r='12'/%3E%3Ccircle cx='60' cy='36' r='12'/%3E%3Ccircle cx='60' cy='60' r='12'/%3E%3Ccircle cx='36' cy='60' r='12'/%3E%3Ccircle cx='12' cy='60' r='12'/%3E%3Ccircle cx='12' cy='36' r='12'/%3E%3C/g%3E%3Cg fill='black'%3E%3Ccircle cx='12' cy='12' r='3.4'/%3E%3Ccircle cx='36' cy='12' r='3.4'/%3E%3Ccircle cx='60' cy='12' r='3.4'/%3E%3Ccircle cx='60' cy='36' r='3.4'/%3E%3Ccircle cx='60' cy='60' r='3.4'/%3E%3Ccircle cx='36' cy='60' r='3.4'/%3E%3Ccircle cx='12' cy='60' r='3.4'/%3E%3Ccircle cx='12' cy='36' r='3.4'/%3E%3Ccircle cx='36' cy='4.5' r='1.6'/%3E%3Ccircle cx='4.5' cy='36' r='1.6'/%3E%3Ccircle cx='67.5' cy='36' r='1.6'/%3E%3Ccircle cx='36' cy='67.5' r='1.6'/%3E%3Ccircle cx='5' cy='5' r='1.6'/%3E%3Ccircle cx='67' cy='5' r='1.6'/%3E%3Ccircle cx='5' cy='67' r='1.6'/%3E%3Ccircle cx='67' cy='67' r='1.6'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Crect width='72' height='72' fill='%23f4ecd9' mask='url(%23m)'/%3E%3Crect x='21.5' y='21.5' width='29' height='29' fill='none' stroke='%23c9a55c' stroke-width='1'/%3E%3C/svg%3E") 24 round;
+  background: #f4ecd9 padding-box;
+}
+.estampa img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; outline: 1px solid #b8954a; outline-offset: 3px; }
+.estampa__pie { display: grid; gap: 5px; text-align: center; color: var(--tinta); padding-top: 4px; }
+.estampa__nombre { font: italic 400 26px/1 var(--serif); color: var(--carmesi); }
+.estampa__recuerdo { font: 500 9.5px/1.3 var(--sans); letter-spacing: .3em; text-transform: uppercase; color: #8a6a2c; }
+.estampa--chica .estampa__papel { border-width: 16px; padding: 6px 6px 9px; gap: 8px; }
+.estampa--chica .estampa__nombre { font-size: 19px; }
+
+/* Confesionario: mueble de madera con portezuelas de celosía que se abren */
+.mueble { margin: 0; position: relative; filter: drop-shadow(0 24px 30px rgba(0, 0, 0, .6)); }
+.mueble__cornisa {
+  display: block; position: relative; height: 30px; margin: 0 -14px;
+  background: linear-gradient(180deg, #6a3520 0%, #4a2214 45%, #2a120b 100%);
+  box-shadow: inset 0 2px 0 rgba(255, 214, 160, .2), 0 3px 0 #1a0906;
+}
+.mueble__cornisa::after { /* dentículos */
+  content: ''; position: absolute; left: 10px; right: 10px; bottom: -9px; height: 8px;
+  background: repeating-linear-gradient(90deg, #3a190f 0 9px, transparent 9px 15px);
+}
+.mueble__cornisa::before { /* cruz dorada de remate */
+  content: ''; position: absolute; left: 50%; top: -26px; width: 16px; height: 26px; margin-left: -8px;
+  background: linear-gradient(#e2c27a, #9c7432) 50% 0 / 3px 100% no-repeat, linear-gradient(90deg, #e2c27a, #9c7432) 0 7px / 100% 3px no-repeat;
+}
+.mueble__hueco {
+  position: relative; aspect-ratio: 3 / 5; padding: 12px; perspective: 900px;
+  background: linear-gradient(90deg, #3a1b10 0%, #5c2d19 50%, #3a1b10 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .6), inset 0 0 0 4px #2a130b, inset 0 0 0 5px rgba(201, 165, 92, .3);
+  margin-top: 9px;
+}
+.mueble__hueco img { width: 100%; height: 100%; object-fit: cover; box-shadow: inset 0 0 30px rgba(0, 0, 0, .8); }
+.mueble__hoja {
+  position: absolute; top: 12px; bottom: 12px; width: calc(50% - 12px);
+  border: 9px solid #4a2314;
+  background:
+    repeating-linear-gradient(45deg, #5a2a17 0 3px, transparent 3px 16px),
+    repeating-linear-gradient(-45deg, #5a2a17 0 3px, transparent 3px 16px),
+    linear-gradient(rgba(12, 5, 3, .74), rgba(12, 5, 3, .74));
+  box-shadow: inset 0 0 0 1px rgba(201, 165, 92, .35), 0 0 0 1px #160805;
+  transition: transform 1.5s .4s var(--ease);
+}
+.mueble__hoja--izq { left: 12px; transform-origin: 0 50%; transform: rotateY(-104deg); }
+.mueble__hoja--der { right: 12px; transform-origin: 100% 50%; transform: rotateY(104deg); }
+.mueble__hoja::after { /* tirador de latón */
+  content: ''; position: absolute; top: 50%; width: 6px; height: 18px; margin-top: -9px; border-radius: 3px;
+  background: linear-gradient(90deg, #f2dc9c, #8f6a2a);
+}
+.mueble__hoja--izq::after { right: -6px; }
+.mueble__hoja--der::after { left: -6px; }
+.js .mueble:not(.is-visible) .mueble__hoja, .mueble.is-cerrado .mueble__hoja { transform: rotateY(0deg); }
+.mueble.is-cerrado .mueble__hoja { transition-duration: .45s; transition-delay: 0s; }
+.mueble__zocalo { display: block; height: 20px; margin: 0 -8px; background: linear-gradient(180deg, #3a1a0f, #160805); box-shadow: inset 0 2px 0 rgba(255, 214, 160, .12); }
+
+/* Ex-voto de hojalata pintada, con sus clavos */
+.exvoto {
+  margin: 0; position: relative; padding: 18px 18px 20px; rotate: 1.4deg;
+  background:
+    radial-gradient(circle at 10px 10px, #f0dfb4 0 1.5px, #7a6038 2.6px, rgba(0, 0, 0, .5) 3.6px, transparent 4.6px),
+    radial-gradient(circle at calc(100% - 10px) 10px, #f0dfb4 0 1.5px, #7a6038 2.6px, rgba(0, 0, 0, .5) 3.6px, transparent 4.6px),
+    radial-gradient(circle at 10px calc(100% - 10px), #f0dfb4 0 1.5px, #7a6038 2.6px, rgba(0, 0, 0, .5) 3.6px, transparent 4.6px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), #f0dfb4 0 1.5px, #7a6038 2.6px, rgba(0, 0, 0, .5) 3.6px, transparent 4.6px),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, .035) 0 1px, transparent 1px 7px),
+    linear-gradient(140deg, #8e2a2c 0%, #6c1a20 55%, #561419 100%);
+  box-shadow: 0 26px 44px rgba(0, 0, 0, .5), inset 0 0 0 1px rgba(0, 0, 0, .45), inset 0 0 0 5px rgba(232, 211, 156, .28), inset 0 0 0 6px rgba(0, 0, 0, .25);
+}
+.exvoto__escena { border: 2px solid #efe1bd; box-shadow: 0 0 0 1px rgba(0, 0, 0, .4); }
+.exvoto__escena img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: 50% 8%; }
+.exvoto__texto {
+  margin-top: 12px; padding: 16px 18px 18px; text-align: center;
+  background: linear-gradient(180deg, #f1e5c6, #e6d6ad); color: #2a1a10;
+  font: italic 400 16.5px/1.42 var(--serif); box-shadow: inset 0 0 0 1px rgba(122, 21, 38, .35), inset 0 0 18px rgba(120, 80, 30, .18);
+}
+.exvoto__titulo { display: block; margin-bottom: 8px; font: 500 10px/1 var(--sans); font-style: normal; letter-spacing: .34em; text-transform: uppercase; color: var(--carmesi); }
+.exvoto__fecha { display: block; margin-top: 10px; font: 500 10px/1 var(--sans); font-style: normal; letter-spacing: .26em; text-transform: uppercase; color: #7a5a2a; }
 
 /* ---------- pie ---------- */
 .pie { padding: 72px var(--margen) 120px; text-align: center; background: var(--noche); border-top: 1px solid var(--oro-25); display: grid; gap: 18px; justify-items: center; }
@@ -536,7 +623,7 @@ body.menu-abierto { overflow: hidden; }
 /* =================== tablet =================== */
 @media (min-width: 640px) {
   .jueves__ctas, .visita__ctas { grid-auto-flow: column; justify-content: start; }
-  .aguas__copas { width: 46%; }
+  .aguas__copas { width: 42%; }
 }
 
 /* =================== escritorio =================== */
@@ -586,9 +673,9 @@ body.menu-abierto { overflow: hidden; }
 
   .aguas__titulo { margin-bottom: 80px; }
   .aguas__grid { grid-template-columns: 5fr 5fr 3fr; align-items: start; gap: 4.5vw; }
-  .aguas__foto { width: 100%; }
+  .aguas__foto { width: 100%; margin-top: 10px; }
   .aguas__texto { padding-top: 40px; }
-  .aguas__copas { width: 100%; margin-top: 46%; }
+  .aguas__copas { width: 100%; margin-top: 52%; }
   .familia { display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; }
   .familia__lista li { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 20px; }
 
@@ -604,7 +691,7 @@ body.menu-abierto { overflow: hidden; }
   .platos__tag { grid-column: 3; grid-row: 1; margin-top: 4px; }
 
   .confesion__grid { grid-template-columns: 4fr 7fr; gap: 8vw; align-items: center; }
-  .confesion__foto { width: 100%; }
+  .confesion__foto { width: min(100%, 340px); }
 
   .jueves { display: grid; grid-template-columns: 1fr 1fr; min-height: 92vh; }
   .jueves__foto { order: 2; aspect-ratio: auto; }
@@ -625,4 +712,6 @@ body.menu-abierto { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .js .revela { opacity: 1; transform: none; }
+  .js .mueble .mueble__hoja--izq { transform: rotateY(-104deg) !important; }
+  .js .mueble .mueble__hoja--der { transform: rotateY(104deg) !important; }
 }
