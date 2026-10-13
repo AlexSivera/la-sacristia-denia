@@ -49,3 +49,4 @@ Nuevo hero «la barra como altar» (ver `docs/design-direction.md`). Comprobado 
 
 ## Sin arcos — 13/10/2026
 Las fotos de Aguas, Confesionario y Visita pasan de arco a marco dorado recto (el del inventario) y el número de capítulo, de cartela con arco a cartela recta. Comprobado en local a 390 y 1440 px: 0 figuras con radio, sin scroll horizontal y 0 errores de consola.
+- Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ (390 y 1440 px): las tres fotos en marco recto (radio 0) cargan (`agua-vertido`, `confesionario`, `entrada`), 0 figuras redondeadas, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
