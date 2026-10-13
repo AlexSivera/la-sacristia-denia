@@ -58,3 +58,4 @@ Estampas con puntilla, confesionario con portezuelas de celosía y ex-voto de ho
 - Movimiento reducido: portezuelas abiertas desde el inicio y sin cierre al confesar.
 - 0 errores de consola.
 - Nota de QA: con `scroll-behavior: smooth`, `scrollIntoView` en las pruebas tarda en llegar a las secciones lejanas; las capturas se repitieron con scroll instantáneo. No afecta al usuario.
+- Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ (390 y 1440 px): puntilla presente en las dos estampas, portezuelas abiertas (~104°), las cuatro fotos visibles y cargadas, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
