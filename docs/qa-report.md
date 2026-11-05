@@ -78,3 +78,4 @@ La contrabarra pasa a la versión de Gemini (`raw/ia/hero-barra-gemini.jpg`, 120
 
 ## Hero con la versión de ChatGPT — 05/11/2026
 Sustituye a la de Gemini: `raw/ia/hero-barra-chatgpt.png` (1536 × 1024), recortada en el 66 % (canto del mostrador). Nitidez a 1440 px (varianza del laplaciano): original 1240 · Gemini 231 · ChatGPT 1437. Sin camarero y sin elementos inventados en el frontal. En móvil, `sizes` pasa de 100vw a 140vw porque la foto se ajusta por altura y se ve más ancha que la pantalla: los móviles de alta densidad cargan la de 768 px. Comprobado en local a 320, 390 y 1440 px, sin scroll horizontal ni errores.
+- Publicado y verificado en la URL pública (ES y EN, 390 y 1440 px): el móvil carga `hero-barra-m-768`, el escritorio `hero-barra-1536`, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
