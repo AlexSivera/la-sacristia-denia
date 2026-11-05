@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexsivera.github.io/la-sacristia-denia/sitemap.xml
