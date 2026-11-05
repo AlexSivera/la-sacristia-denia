@@ -87,3 +87,4 @@ Comprobado en local con Playwright a 1880, 1440 y 390 px (ES y EN):
 - Inventario: los seis cuadros con el centro a la misma altura (230 px en escritorio, 166 px en móvil) y todas las cartelas alineadas; la pieza VII (vitrina, sin foto) ocupa la franja de los cuadros.
 - Titulares con `text-wrap: balance` y párrafos con `pretty`: la frase del mostrador queda en dos líneas equilibradas.
 - Sin scroll horizontal y 0 errores de consola.
+- Publicado y verificado en la URL pública (ES y EN, 390 y 1440 px): cajón abierto al pasar el ratón (≈ 67 px de interior), foto y ficha a la misma altura en escritorio (477/477 ES, 433/433 EN), centros de los cuadros alineados (230 px / 166 px), pieza I = salón del baldaquino con su imagen cargada, sin scroll horizontal y 0 respuestas ≥ 400.
