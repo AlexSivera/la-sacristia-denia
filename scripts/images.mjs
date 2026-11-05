@@ -14,10 +14,10 @@ const OUT = 'src/assets/img';
 const FOTOS = {
   // — Fotos reales de La Sacristía (Google Maps, TripAdvisor, Instagram) —
   // Hero: la contrabarra, por encima del mostrador (que continúa el mostrador dibujado en CSS).
-  // Provisional: la foto real de TripAdvisor (ta-12) recreada con IA (Gemini), sin camarero y con mejor luz.
-  // El canto del mostrador cae al 69,5 % de la altura: se recorta en el 70 %.
-  'hero-barra':       { src: 'ia/hero-barra-gemini.jpg', area: [0, 0, 1, 0.70], ratio: 1200 / 627, foco: [0.5, 1], grade: 'ia', sizes: [800, 1200] },
-  'hero-barra-m':     { src: 'ia/hero-barra-gemini.jpg', area: [0.25, 0, 0.5, 0.70], ratio: 600 / 627, foco: [0.5, 1], grade: 'ia', sizes: [480, 600] },
+  // Provisional: la foto real de TripAdvisor (ta-12) recreada con IA (ChatGPT), sin camarero, más nítida y con mejor luz.
+  // El canto del mostrador cae al 66 % de la altura: se recorta ahí.
+  'hero-barra':       { src: 'ia/hero-barra-chatgpt.png', area: [0, 0, 1, 0.66], ratio: 1536 / 676, foco: [0.5, 1], grade: 'ia', sizes: [800, 1200, 1536] },
+  'hero-barra-m':     { src: 'ia/hero-barra-chatgpt.png', area: [0.25, 0, 0.5, 0.66], ratio: 768 / 676, foco: [0.5, 1], grade: 'ia', sizes: [480, 768] },
   'altar-inmaculada': { src: 'real/maps-5.jpg', ratio: 3 / 4, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'barra-querubin':   { src: 'real/maps-4.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200, 1600] },
   'barra-soles':      { src: 'ta/ta-12-bello.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
