@@ -8,14 +8,13 @@ Uso para la demo comercial. **Antes de publicar como web definitiva, confirmar c
 | Archivo | Sección | Origen | Notas |
 |---|---|---|---|
 | `hero-barra` / `hero-barra-m` | Hero (contrabarra; escritorio panorámica, móvil vertical) | **Recreada con IA (ChatGPT)** a partir de la foto real de TripAdvisor "Bello" (`ta-12`): `raw/ia/hero-barra-chatgpt.png`, 1536 × 1024. Recortada en el 66 % superior, por encima del mostrador | Provisional. Sin camarero, más nítida que la original (varianza del laplaciano a 1440 px: 1437 frente a 1240) y con mejor luz; el frontal del mostrador queda oscuro, sin elementos inventados. Se descartó una versión de Gemini (`raw/ia/hero-barra-gemini.jpg`): más limpia pero mucho más blanda (231) y con frontal tallado, mesas y cartas inventadas. **Prioridad nº 1 de la sesión**: barra frontal y simétrica entre los dos soles, de noche, lámparas encendidas, sin gente, cámara a la altura del tablero. |
-| (`raw/real/maps-6.jpg`, salón del baldaquino) | Imagen para compartir (OG) | Google Maps (ficha del local) | La mejor foto del local. |
+| `salon-baldaquino` (`raw/real/maps-6.jpg`) | Inventario I, imagen para compartir (OG) | Google Maps (ficha del local) | La mejor foto del local. |
 | `altar-inmaculada` | Inventario II | Google Maps | |
 | `barra-querubin` | Inventario V | Google Maps | |
 | `champagne` | Carta · Para picar | Google Maps | Provisional para esa pestaña: falta foto de tapas. |
 | `cafe` | Carta · Café y dulce | Google Maps | Nivel 2: mejorable. |
 | (`raw/real/maps-7.jpg`, flores en penumbra) | Sin usar | Google Maps | Reserva. |
 | `entrada` | Visita | Google Maps (foto con rótulo MMXXI) | Aparecen clientes a lo lejos: sustituir por una sin personas reconocibles. |
-| `barra-soles` | Inventario I | TripAdvisor, foto "Bello" (la misma del hero, encuadre completo) | |
 | `confesionario` | Inventario III, Confesionario | TripAdvisor | |
 | `espejo-velas` | Inventario IV | TripAdvisor | |
 | `rincon-azul` | Inventario VI | TripAdvisor | |

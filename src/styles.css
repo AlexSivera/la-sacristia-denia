@@ -50,7 +50,8 @@ img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 button { font: inherit; color: inherit; }
 em { font-style: italic; }
-h1, h2, h3, h4 { margin: 0; font-weight: 400; }
+h1, h2, h3, h4 { margin: 0; font-weight: 400; text-wrap: balance; }
+p { text-wrap: pretty; }
 p { margin: 0; }
 :focus-visible { outline: 2px solid var(--oro-claro); outline-offset: 3px; }
 ::selection { background: var(--carmesi); color: var(--cera); }
@@ -228,7 +229,7 @@ body.menu-abierto { overflow: hidden; }
 
 /* el frontal */
 .frente { position: relative; display: grid; gap: 22px; padding-top: 46px; max-width: var(--ancho); margin: 0 auto; }
-.frente__nombre { display: grid; justify-items: center; gap: 18px; text-align: center; padding-bottom: 26px; border-bottom: 1px solid var(--oro-25); }
+.frente__nombre { display: grid; justify-items: center; gap: 18px; text-align: center; }
 .hero__titulo { display: grid; justify-items: center; line-height: .88; }
 .hero__la, .hero__nombre {
   background: linear-gradient(100deg, #8a6424 0%, #f6e3a6 20%, #b88b3d 38%, #fff1c4 50%, #a87c33 64%, #ecd28c 82%, #8a6424 100%);
@@ -247,26 +248,50 @@ body.menu-abierto { overflow: hidden; }
 @keyframes latido { 50% { box-shadow: 0 0 0 8px rgba(111, 211, 154, 0); } }
 
 /* lema y cajones del mostrador: cada cajón lleva su portaetiquetas de latón y su tirador */
-.frente__lema { text-align: center; font: italic 400 19px/1.4 var(--serif); color: var(--cera-70); max-width: 26em; margin: 0 auto; }
+.frente__lema { text-align: center; font: italic 400 19px/1.4 var(--serif); color: var(--cera-70); max-width: 26em; margin: 0 auto; text-wrap: balance; }
 .frente__lema em { color: var(--agua); }
-.cajones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 780px; margin: 0 auto; }
-.cajon {
-  position: relative; display: grid; justify-items: center; align-content: center; gap: 13px; min-height: 108px; padding: 16px 8px 15px;
-  text-decoration: none; color: var(--tinta);
-  background: linear-gradient(180deg, #43201f 0%, #2c1312 100%);
-  border: 1px solid rgba(201, 165, 92, .5);
-  box-shadow: inset 0 0 0 4px #1d0c0c, inset 0 0 0 5px rgba(201, 165, 92, .24), inset 0 16px 24px rgba(255, 255, 255, .035), 0 2px 0 rgba(0, 0, 0, .45);
-  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+/* la cajonera: tres cajones encajados en el cuerpo del mostrador, de lado a lado.
+   Al pasar el ratón (o con el foco) el frente sale hacia delante y deja ver lo que hay dentro. */
+.cajones {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; width: 100%; margin: 6px auto 0; padding: 6px;
+  background: #130606;
+  box-shadow: 0 0 0 1px rgba(201, 165, 92, .35), 0 0 0 5px #2e1413, 0 0 0 6px rgba(201, 165, 92, .2), inset 0 6px 12px rgba(0, 0, 0, .75);
 }
-.cajon:hover, .cajon:focus-visible { transform: translateY(3px) scale(1.03); box-shadow: inset 0 0 0 4px #1d0c0c, inset 0 0 0 5px rgba(201, 165, 92, .4), inset 0 16px 24px rgba(255, 255, 255, .05), 0 14px 22px rgba(0, 0, 0, .55); }
+.cajon { position: relative; display: block; text-decoration: none; color: var(--tinta); perspective: 700px; }
+.cajon__frente {
+  position: relative; z-index: 1; display: grid; justify-items: center; align-content: center; gap: 14px; min-height: 112px; padding: 16px 8px 18px;
+  background: linear-gradient(180deg, #4a2422 0%, #3a1a1a 55%, #2d1414 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .55), inset 0 0 0 7px #3b1b1a, inset 0 0 0 8px rgba(201, 165, 92, .32),
+    inset 0 0 0 11px #2b1312, inset 0 0 0 12px rgba(201, 165, 92, .16), inset 0 20px 28px rgba(255, 255, 255, .04), 0 2px 0 rgba(0, 0, 0, .5);
+  transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+}
+.cajon__interior {
+  position: absolute; z-index: 0; left: 6%; right: 6%; bottom: calc(100% - 14px); height: 0; overflow: hidden;
+  background: #1a0b09; border: 4px solid #4d2415; border-bottom: 0; box-shadow: inset 0 12px 18px rgba(0, 0, 0, .85);
+  transform-origin: 50% 100%; transform: rotateX(34deg); transition: height .5s var(--ease);
+}
+.cajon__interior img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.82) saturate(.92); }
+.cajon:hover .cajon__frente, .cajon:focus-visible .cajon__frente {
+  transform: translateY(14px);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .55), inset 0 0 0 7px #3b1b1a, inset 0 0 0 8px rgba(201, 165, 92, .45),
+    inset 0 0 0 11px #2b1312, inset 0 0 0 12px rgba(201, 165, 92, .22), inset 0 20px 28px rgba(255, 255, 255, .06), 0 18px 24px rgba(0, 0, 0, .6);
+}
+.cajon:hover .cajon__interior, .cajon:focus-visible .cajon__interior { height: 76px; }
+.cajon:focus-visible { outline: none; }
+.cajon:focus-visible .cajon__frente { outline: 2px solid var(--oro-claro); outline-offset: 3px; }
 .cajon__etiqueta {
-  display: grid; justify-items: center; gap: 4px; width: 86%; padding: 7px 6px 6px;
+  display: grid; justify-items: center; gap: 4px; width: 84%; padding: 7px 6px 6px;
   background: linear-gradient(180deg, #f7efdc, #e8dabb);
   border: 2px solid #b8913f; box-shadow: 0 0 0 1px #6e5322, inset 0 1px 3px rgba(0, 0, 0, .18);
   font: 500 10px/1.2 var(--sans); letter-spacing: .12em; text-transform: uppercase; text-align: center; overflow-wrap: anywhere;
 }
 .cajon__n { font: italic 400 14px/1 var(--serif); letter-spacing: 0; text-transform: none; color: var(--carmesi); }
-.cajon__tirador { width: 46px; height: 10px; border-radius: 6px; background: linear-gradient(180deg, #f6e4ae, #b88d3c 50%, #6d4f1f); box-shadow: 0 3px 5px rgba(0, 0, 0, .5); }
+/* tirador de asa, con sus dos rosetas */
+.cajon__tirador { position: relative; width: 46px; height: 14px; border: 3px solid #d2ad62; border-top: 0; border-radius: 0 0 24px 24px / 0 0 14px 14px; box-shadow: 0 3px 4px rgba(0, 0, 0, .45); }
+.cajon__tirador::before, .cajon__tirador::after { content: ''; position: absolute; top: -5px; width: 9px; height: 9px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #f6e4ae, #8a6424 70%); box-shadow: 0 1px 2px rgba(0, 0, 0, .5); }
+.cajon__tirador::before { left: -7px; }
+.cajon__tirador::after { right: -7px; }
+@media (hover: none) { .cajon__interior { display: none; } }
 
 /* ---------- I · museo ---------- */
 .museo { padding: 72px 0 104px; background: linear-gradient(180deg, #140d12 0%, var(--petroleo) 26%, var(--petroleo) 74%, #102630 100%); }
@@ -275,20 +300,25 @@ body.menu-abierto { overflow: hidden; }
 .museo__titulo em { display: block; color: var(--oro-claro); font-size: .62em; line-height: 1.15; margin-top: .45em; letter-spacing: -.01em; }
 .museo__cuerpo { display: grid; gap: 40px; margin-top: 52px; }
 .museo__foto { aspect-ratio: 1; max-width: 520px; }
-.museo__texto { display: grid; gap: 34px; color: var(--cera-70); max-width: 36em; }
 /* ficha técnica: la cartela de la obra, impresa y montada en la pared */
-.ficha { position: relative; padding: 22px 22px 14px; color: var(--tinta); background: linear-gradient(180deg, #f5eddb, #e9dec6); box-shadow: 0 18px 32px rgba(0, 0, 0, .35); }
-.ficha::before, .ficha::after { content: ''; position: absolute; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, #9a9a9a 70%); }
-.ficha::before { left: 9px; }
-.ficha::after { right: 9px; }
-.ficha__kicker { font: 500 10px/1 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--carmesi); padding-bottom: 12px; border-bottom: 1px solid rgba(28, 20, 24, .25); }
+.ficha {
+  position: relative; padding: 24px 24px 16px; color: var(--tinta); max-width: 40em;
+  --tornillo: radial-gradient(circle, #fff 0 1px, #c4c4c4 1.6px, #7a7a7a 3.2px, rgba(0, 0, 0, .25) 4px, transparent 4.8px);
+  background:
+    var(--tornillo) 0 0 / 22px 22px no-repeat, var(--tornillo) 100% 0 / 22px 22px no-repeat,
+    var(--tornillo) 0 100% / 22px 22px no-repeat, var(--tornillo) 100% 100% / 22px 22px no-repeat,
+    linear-gradient(180deg, #f6eedc, #e8dcc3);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 3px 0 rgba(0, 0, 0, .25), 0 30px 46px rgba(0, 0, 0, .45);
+}
+.ficha__kicker { display: flex; justify-content: space-between; gap: 12px; font: 500 10px/1 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--carmesi); padding-bottom: 12px; border-bottom: 1px solid rgba(28, 20, 24, .25); }
+.ficha__inv { letter-spacing: .14em; color: #7a5a2a; white-space: nowrap; }
 .ficha__lista { margin: 0; }
 .ficha__lista div { display: grid; gap: 2px; padding: 9px 0; border-bottom: 1px solid rgba(28, 20, 24, .1); }
 .ficha__lista div:last-child { border-bottom: 0; }
 .ficha__lista dt { font: 500 9.5px/1.6 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: #7a5a2a; }
 .ficha__lista dd { margin: 0; font: 400 16px/1.38 var(--serif); }
 .ficha__lista div:first-child dd { font: italic 400 23px/1.1 var(--serif); }
-.definicion { margin: 14px 0 0; padding: 22px 0 0; border-top: 1px solid var(--oro-25); color: var(--cera); }
+.definicion { margin: 0; padding: 22px 0 0; border-top: 1px solid var(--oro-25); color: var(--cera); max-width: 36em; }
 .definicion dt { font: italic 400 30px/1 var(--serif); margin-bottom: 12px; }
 .definicion dt span { font-size: 16px; color: var(--oro); }
 .definicion dd { margin: 0 0 6px; display: flex; gap: 10px; font-size: 15.5px; color: var(--cera-70); }
@@ -303,15 +333,17 @@ body.menu-abierto { overflow: hidden; }
 .inventario__nota { color: var(--cera-70); font-size: 15px; }
 .inventario__flechas { display: none; gap: 8px; }
 .inventario__lista {
+  --muro: min(85.33vw, 453px); /* alto de los cuadros verticales: los demás se centran en esta franja */
   list-style: none; margin: 0; padding: 44px var(--margen) 24px; display: flex; gap: 30px; align-items: flex-start; isolation: isolate;
   overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain;
   scroll-padding-left: var(--margen);
 }
 .inventario__lista::-webkit-scrollbar { display: none; }
-.pieza { flex: 0 0 auto; width: 78vw; max-width: 460px; scroll-snap-align: start; display: grid; gap: 22px; position: relative; }
-/* haz de luz cálida sobre la pared */
-.pieza::before { content: ''; position: absolute; z-index: -1; top: -44px; left: -18%; right: -18%; height: 85%; pointer-events: none;
-  background: radial-gradient(46% 62% at 50% 24px, rgba(255, 212, 150, .2), rgba(255, 212, 150, .06) 55%, transparent 78%);
+.pieza { flex: 0 0 auto; width: 78vw; max-width: 460px; scroll-snap-align: start; display: grid; grid-template-rows: var(--muro) auto; gap: 22px; position: relative; }
+.pieza > .marco { align-self: center; }
+/* haz de luz cálida sobre la pared, que sale de la lámpara de cada cuadro */
+.pieza .luz { position: absolute; z-index: -1; top: -44px; left: -22%; right: -22%; height: calc(100% + 70px); pointer-events: none;
+  background: radial-gradient(46% 58% at 50% 24px, rgba(255, 212, 150, .2), rgba(255, 212, 150, .06) 55%, transparent 78%);
   -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 22px); mask-image: linear-gradient(180deg, transparent 0, #000 22px); }
 /* lámpara de cuadro de latón */
 .pieza .marco::after { content: ''; position: absolute; top: -26px; left: 32%; right: 32%; height: 7px; border-radius: 4px;
@@ -320,14 +352,14 @@ body.menu-abierto { overflow: hidden; }
 .pieza .marco { aspect-ratio: 4 / 3; }
 .pieza--alta { width: 64vw; max-width: 340px; }
 .pieza--alta .marco { aspect-ratio: 3 / 4; }
-.pieza--texto { width: 64vw; max-width: 330px; display: flex; }
+.pieza--texto { width: 64vw; max-width: 330px; }
 .cartela { border-top: 1px solid var(--oro-25); padding-top: 14px; }
 .cartela__n { font: 500 10.5px/1 var(--sans); letter-spacing: .3em; color: var(--oro); }
 .cartela h4 { font: 400 24px/1.15 var(--serif); margin: 10px 0 8px; }
 .cartela p { font-size: 15px; color: var(--cera-70); }
 .cartela--sola {
   border: 1px solid var(--oro-50); outline: 1px solid var(--oro-25); outline-offset: -7px; padding: 34px 26px;
-  display: flex; flex-direction: column; justify-content: flex-end; width: 100%; min-height: 360px;
+  display: flex; flex-direction: column; justify-content: flex-end; width: 100%; height: 100%;
   background: radial-gradient(80% 60% at 50% 20%, rgba(201,165,92,.12), transparent 70%);
 }
 .cartela--sola h4 { font-size: 30px; }
@@ -745,22 +777,27 @@ body.menu-abierto { overflow: hidden; }
   .reservado__kicker { font-size: 10.5px; }
   .reservado__tel { font-size: 12.5px; }
   .frente { gap: 28px; padding-top: 34px; }
-  .cajon { min-height: 124px; }
-  .cajon__etiqueta { width: 74%; font-size: 11.5px; padding: 9px 8px 8px; }
-  .frente__nombre { padding-bottom: 30px; }
+  .cajones { margin-top: 46px; gap: 8px; padding: 8px; }
+  .cajon__frente { min-height: 138px; gap: 18px; }
+  .cajon__etiqueta { width: 56%; font-size: 11.5px; padding: 9px 8px 8px; }
+  .cajon__tirador { width: 58px; height: 16px; }
+  .cajon:hover .cajon__interior, .cajon:focus-visible .cajon__interior { height: 92px; }
   .hero__titulo { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; column-gap: .3em; }
   .hero__nombre { font-size: clamp(110px, 10.4vw, 176px); }
   .hero__la { font-size: clamp(56px, 5vw, 86px); }
   .hero__sub { flex-basis: 100%; text-align: center; }
   .museo__titulo { max-width: 13.5em; }
-  .museo__cuerpo { grid-template-columns: 5fr 6fr; gap: 7vw; align-items: start; margin-top: 72px; }
-  .museo__foto { margin-top: 10px; }
+  .museo__cuerpo { grid-template-columns: 5fr 6fr; column-gap: 7vw; row-gap: 44px; align-items: stretch; margin-top: 72px; }
+  /* la foto toma la altura de la ficha: obra y cartela, a la misma altura */
+  .museo__foto { aspect-ratio: auto; max-width: none; min-height: 380px; }
+  .museo__foto img { position: absolute; inset: 0; }
+  .definicion { grid-column: 2; }
   .ficha__lista div { grid-template-columns: 110px 1fr; gap: 14px; padding: 10px 0; }
   .ficha__lista dt { line-height: 1.9; }
   .inventario__cabeza { grid-template-columns: 1fr auto; align-items: end; }
   .inventario__nota { grid-column: 1; }
   .inventario__flechas { display: flex; grid-column: 2; grid-row: 1 / span 2; }
-  .inventario__lista { gap: 48px; padding-left: max(var(--margen), calc((100vw - var(--ancho)) / 2)); scroll-padding-left: max(var(--margen), calc((100vw - var(--ancho)) / 2)); }
+  .inventario__lista { --muro: min(32vw, 533px); gap: 48px; padding-left: max(var(--margen), calc((100vw - var(--ancho)) / 2)); scroll-padding-left: max(var(--margen), calc((100vw - var(--ancho)) / 2)); }
   .pieza { width: 34vw; max-width: 560px; }
   .pieza--alta { width: 24vw; max-width: 400px; }
   .pieza--texto { width: 22vw; max-width: 360px; }

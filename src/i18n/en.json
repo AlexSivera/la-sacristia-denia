@@ -29,7 +29,6 @@
   "menu.reservar": "Book · +34 865 59 27 59",
   "alt.hero": "The bar at La Sacristía between two golden sunbursts and the brick pillars of the old garage, with crystal lamps, gilded cartouches and red velvet drapes",
   "alt.bustos": "Classical busts in marble, bronze and plaster among flowers, in black and white",
-  "alt.soles": "The bar between two golden sunbursts, crystal lamps and red curtains",
   "alt.inmaculada": "Carved Immaculate Virgin on a candlelit altar, framed by blue drapes",
   "alt.confesionarioInv": "Wooden confessional with a purple and gold chasuble",
   "alt.espejo": "Gilded mirror surrounded by roses, with a white bust and candelabra",
@@ -78,8 +77,8 @@
   "inv.ant": "Previous piece",
   "inv.sig": "Next piece",
   "inv.aria": "Pieces in the inventory",
-  "inv.1t": "The bar of the sunbursts",
-  "inv.1p": "Two golden sunbursts, crystal lamps and the bottles on show. This is where the aguas are born.",
+  "inv.1t": "The canopy room",
+  "inv.1p": "Crimson velvet, a large gilt-framed canvas, flowers and Isabelline armchairs. A seat inside the painting.",
   "inv.2t": "The Immaculate Virgin",
   "inv.2p": "A 17th-century carving, restored in-house: her skin tone and the blue of her mantle had to be brought back.",
   "inv.3t": "The confessional",
@@ -238,5 +237,6 @@
   "barra.carta": "Menu",
   "fel.s1": "Google · translated from Spanish",
   "fel.s3": "Google · translated from Spanish",
-  "fel.s5": "TripAdvisor · translated from Spanish"
+  "fel.s5": "TripAdvisor · translated from Spanish",
+  "alt.salon": "The room at La Sacristía: red velvet canopy, a large gilt-framed painting, flowers, Isabelline armchairs and marble tables"
 }

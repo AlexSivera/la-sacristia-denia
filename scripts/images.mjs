@@ -18,9 +18,9 @@ const FOTOS = {
   // El canto del mostrador cae al 66 % de la altura: se recorta ahí.
   'hero-barra':       { src: 'ia/hero-barra-chatgpt.png', area: [0, 0, 1, 0.66], ratio: 1536 / 676, foco: [0.5, 1], grade: 'ia', sizes: [800, 1200, 1536] },
   'hero-barra-m':     { src: 'ia/hero-barra-chatgpt.png', area: [0.25, 0, 0.5, 0.66], ratio: 768 / 676, foco: [0.5, 1], grade: 'ia', sizes: [480, 768] },
+  'salon-baldaquino': { src: 'real/maps-6.jpg', ratio: 3 / 4, foco: [0.56, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'altar-inmaculada': { src: 'real/maps-5.jpg', ratio: 3 / 4, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'barra-querubin':   { src: 'real/maps-4.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200, 1600] },
-  'barra-soles':      { src: 'ta/ta-12-bello.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'confesionario':    { src: 'ta/ta-17-caption.jpg', ratio: 3 / 5, foco: [0.5, 0.42], grade: 'vela', sizes: [480, 800, 1100] },
   'espejo-velas':     { src: 'ta/ta-13-just-some-of-the-amazing.jpg', ratio: 3 / 4, foco: [0.5, 0.55], grade: 'vela', sizes: [480, 800, 1200] },
   'bustos':           { src: 'ta/ta-02-detalles.jpg', ratio: 1, foco: [0.5, 0.5], grade: 'bn', sizes: [480, 800, 1200] },

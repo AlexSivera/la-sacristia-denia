@@ -14,6 +14,14 @@
       768
     ]
   },
+  "salon-baldaquino": {
+    "ratio": 0.75,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
   "altar-inmaculada": {
     "ratio": 0.75,
     "widths": [
@@ -29,14 +37,6 @@
       800,
       1200,
       1600
-    ]
-  },
-  "barra-soles": {
-    "ratio": 1.3333333333333333,
-    "widths": [
-      480,
-      800,
-      1200
     ]
   },
   "confesionario": {
