@@ -70,3 +70,4 @@ Cajones del mostrador, ficha técnica, misal con cintas, tablón parroquial (con
 - Libro de visitas: corregido el margen de la última firma que dejaba una franja verde entre páginas; texto ajustado al pautado.
 - 0 errores de consola.
 - La página en móvil mide ≈ 14.000 px (antes 12.461): el misal, el tablón y el libro ocupan más que los bloques a los que sustituyen.
+- Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ y …/en.html (390 y 1440 px): 3 cajones, 5 cintas, tablón con fecha («Hoy, jueves, 5 de noviembre» / «Tonight, Thursday 5 November»), 6 firmas, ficha en vivo, selector de idioma, 3 fuentes, 0 imágenes rotas, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400. Las láminas de las páginas ocultas del misal no se descargan hasta tirar de su cinta (carga diferida).
