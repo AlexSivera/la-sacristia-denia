@@ -95,3 +95,4 @@ Investigadas Google Maps (11 fotos y las de 5 reseñas, vista limitada sin sesi�
 
 ## Inventario de ocho piezas — 05/11/2026
 Se añade el techo de las plumas (nº IV), el confesionario entero sustituye al primer plano en el inventario (nº III) y la cartela de la Inmaculada nombra la sala de La Gloria.
+- Publicado y verificado en la URL pública (ES y EN, 390 y 1440 px): ocho piezas, confesionario entero y techo de plumas cargados, centros de los cuadros alineados (166 / 230 px), sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
