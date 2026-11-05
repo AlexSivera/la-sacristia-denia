@@ -74,3 +74,4 @@ Cajones del mostrador, ficha técnica, misal con cintas, tablón parroquial (con
 
 ## Hero con la barra recreada con IA — 05/11/2026
 La contrabarra pasa a la versión de Gemini (`raw/ia/hero-barra-gemini.jpg`, 1200 × 896), recortada en el 70 % superior, donde cae el canto del mostrador. Medida de nitidez (varianza del laplaciano a 1440 px): original 1223, Gemini 225; la de Gemini tiene menos detalle fino pero mucho menos ruido, mejor luz y sin camarero. Comprobado en local a 320, 390 y 1440 px: el móvil carga `hero-barra-m`, el escritorio `hero-barra-1200`, sin scroll horizontal y sin errores. Nota del pie actualizada en ES y EN.
+- Publicado y verificado en la URL pública (ES y EN, 390 y 1440 px): el móvil carga `hero-barra-m` y el escritorio `hero-barra-1200`, nota del pie actualizada, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
