@@ -10,12 +10,14 @@ const OUT = 'src/assets/img';
 
 // area: [x, y, ancho, alto] en fracciones — zona de la foto de la que se parte (opcional)
 // ratio: recorte final (ancho/alto) · foco: punto 0–1 hacia el que se desplaza el recorte
-// grade: vela (fotos reales del local, unificadas) · bn (blanco y negro) · stock (provisionales)
+// grade: vela (fotos reales del local, unificadas) · bn (blanco y negro) · stock (provisionales) · ia (ya viene cálida: velo suave)
 const FOTOS = {
   // — Fotos reales de La Sacristía (Google Maps, TripAdvisor, Instagram) —
-  // Hero: la contrabarra, por encima del mostrador real (que continúa el mostrador dibujado en CSS)
-  'hero-barra':       { src: 'ta/ta-12-bello.jpg', area: [0, 0, 1, 0.73], ratio: 1311 / 718, foco: [0.5, 1], grade: 'vela', sizes: [800, 1311] },
-  'hero-barra-m':     { src: 'ta/ta-12-bello.jpg', area: [0.25, 0, 0.5, 0.73], ratio: 655 / 718, foco: [0.5, 1], grade: 'vela', sizes: [480, 655] },
+  // Hero: la contrabarra, por encima del mostrador (que continúa el mostrador dibujado en CSS).
+  // Provisional: la foto real de TripAdvisor (ta-12) recreada con IA (Gemini), sin camarero y con mejor luz.
+  // El canto del mostrador cae al 69,5 % de la altura: se recorta en el 70 %.
+  'hero-barra':       { src: 'ia/hero-barra-gemini.jpg', area: [0, 0, 1, 0.70], ratio: 1200 / 627, foco: [0.5, 1], grade: 'ia', sizes: [800, 1200] },
+  'hero-barra-m':     { src: 'ia/hero-barra-gemini.jpg', area: [0.25, 0, 0.5, 0.70], ratio: 600 / 627, foco: [0.5, 1], grade: 'ia', sizes: [480, 600] },
   'altar-inmaculada': { src: 'real/maps-5.jpg', ratio: 3 / 4, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'barra-querubin':   { src: 'real/maps-4.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200, 1600] },
   'barra-soles':      { src: 'ta/ta-12-bello.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
@@ -37,7 +39,7 @@ const FOTOS = {
 };
 
 // Velo cálido en "soft-light": acerca la temperatura de fuentes distintas a la luz de vela del local
-const VELO = { vela: [255, 196, 128, 0.16], stock: [255, 190, 120, 0.2], bn: [0, 0, 0, 0] };
+const VELO = { vela: [255, 196, 128, 0.16], stock: [255, 190, 120, 0.2], ia: [255, 200, 140, 0.06], bn: [0, 0, 0, 0] };
 
 async function fuente(src, area) {
   const img = sharp(`raw/${src}`).rotate();
@@ -59,7 +61,7 @@ async function preparar({ src, area, ratio, foco: [fx, fy], grade }) {
 
   if (grade === 'bn') return { buf: await img.grayscale().linear(1.08, -6).toBuffer(), cw };
   // Fotos de móvil: menos saturación y negros más profundos, como en penumbra
-  img = img.modulate({ saturation: grade === 'vela' ? 0.9 : 0.86 }).linear(1.06, -9);
+  img = grade === 'ia' ? img.modulate({ saturation: 0.95 }).linear(1.03, -4) : img.modulate({ saturation: grade === 'vela' ? 0.9 : 0.86 }).linear(1.06, -9);
   const [r, g, b, a] = VELO[grade];
   const velo = await sharp({ create: { width: cw, height: ch, channels: 4, background: { r, g, b, alpha: a } } }).png().toBuffer();
   return { buf: await img.composite([{ input: velo, blend: 'soft-light' }]).toBuffer(), cw };

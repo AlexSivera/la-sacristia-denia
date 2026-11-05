@@ -71,3 +71,6 @@ Cajones del mostrador, ficha técnica, misal con cintas, tablón parroquial (con
 - 0 errores de consola.
 - La página en móvil mide ≈ 14.000 px (antes 12.461): el misal, el tablón y el libro ocupan más que los bloques a los que sustituyen.
 - Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ y …/en.html (390 y 1440 px): 3 cajones, 5 cintas, tablón con fecha («Hoy, jueves, 5 de noviembre» / «Tonight, Thursday 5 November»), 6 firmas, ficha en vivo, selector de idioma, 3 fuentes, 0 imágenes rotas, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400. Las láminas de las páginas ocultas del misal no se descargan hasta tirar de su cinta (carga diferida).
+
+## Hero con la barra recreada con IA — 05/11/2026
+La contrabarra pasa a la versión de Gemini (`raw/ia/hero-barra-gemini.jpg`, 1200 × 896), recortada en el 70 % superior, donde cae el canto del mostrador. Medida de nitidez (varianza del laplaciano a 1440 px): original 1223, Gemini 225; la de Gemini tiene menos detalle fino pero mucho menos ruido, mejor luz y sin camarero. Comprobado en local a 320, 390 y 1440 px: el móvil carga `hero-barra-m`, el escritorio `hero-barra-1200`, sin scroll horizontal y sin errores. Nota del pie actualizada en ES y EN.

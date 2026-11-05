@@ -45,7 +45,7 @@ for (const [pagina, lang] of [['index.html', 'es'], ['en.html', 'en']]) {
 
 // Peso aproximado inicial (móvil): HTML + CSS + JS + fuentes + foto del hero
 let kb = 0;
-for (const f of ['index.html', 'styles.css', 'main.js', 'assets/fonts/bodoni-moda.woff2', 'assets/fonts/bodoni-moda-italic.woff2', 'assets/fonts/jost.woff2', 'assets/img/hero-barra-m-655.webp']) {
+for (const f of ['index.html', 'styles.css', 'main.js', 'assets/fonts/bodoni-moda.woff2', 'assets/fonts/bodoni-moda-italic.woff2', 'assets/fonts/jost.woff2', 'assets/img/hero-barra-m-600.webp']) {
   kb += (await fs.stat(path.join(OUT, f))).size / 1024;
 }
 console.log(`${resumen}primera carga ≈ ${Math.round(kb)} KB`);

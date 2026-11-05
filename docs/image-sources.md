@@ -7,7 +7,7 @@ Uso para la demo comercial. **Antes de publicar como web definitiva, confirmar c
 
 | Archivo | Sección | Origen | Notas |
 |---|---|---|---|
-| `hero-barra` / `hero-barra-m` | Hero (contrabarra; escritorio panorámica, móvil vertical) | TripAdvisor, foto "Bello" (`ta-12`), recortada por encima del mostrador | 1311 px de ancho: algo blanda en pantallas grandes. **Prioridad nº 1 de la sesión**: barra frontal y simétrica entre los dos soles, de noche, lámparas encendidas, sin gente, cámara a la altura del tablero. |
+| `hero-barra` / `hero-barra-m` | Hero (contrabarra; escritorio panorámica, móvil vertical) | **Recreada con IA (Gemini)** a partir de la foto real de TripAdvisor "Bello" (`ta-12`): `raw/ia/hero-barra-gemini.jpg`, 1200 × 896. Recortada en el 70 % superior, por encima del mostrador | Provisional. Sin camarero y con mejor luz; la IA inventa el frontal tallado del mostrador, las mesas y unas cartas con texto ilegible, pero todo eso queda fuera del recorte. Solo 1200 px de ancho: un reescalado ×3 (Upscayl o Gemini) la dejaría nítida en pantallas grandes. **Prioridad nº 1 de la sesión**: barra frontal y simétrica entre los dos soles, de noche, lámparas encendidas, sin gente, cámara a la altura del tablero. |
 | (`raw/real/maps-6.jpg`, salón del baldaquino) | Imagen para compartir (OG) | Google Maps (ficha del local) | La mejor foto del local. |
 | `altar-inmaculada` | Inventario II | Google Maps | |
 | `barra-querubin` | Inventario V | Google Maps | |
