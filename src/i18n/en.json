@@ -90,7 +90,7 @@
   "inv.6t": "The blue corner",
   "inv.6p": "A sky of lights above the gilded sofa. For long conversations.",
   "inv.7t": "Natalia’s cabinet",
-  "inv.7p": "Handmade jewellery crafted from cutlery by the artist Natalia. Ask about it: you can take it home, sin-free.",
+  "inv.7p": "Jewellery by the artist Natalia, including rings made from spoons and forks. Cutlery that ends up in your hand, but not for eating.",
   "aguas.cap": "The spirited waters",
   "aguas.recuerdo": "A keepsake from La Sacristía",
   "aguas.lead": "The house’s most emblematic drink and the parishioners’ favourite: <strong>lemon</strong>, a sweet touch of <strong>curaçao</strong>, the sparkling finish of <strong>cava</strong> and a secret blend that never leaves the sacristy.",
@@ -238,5 +238,6 @@
   "fel.s1": "Google · translated from Spanish",
   "fel.s3": "Google · translated from Spanish",
   "fel.s5": "TripAdvisor · translated from Spanish",
-  "alt.salon": "The room at La Sacristía: red velvet canopy, a large gilt-framed painting, flowers, Isabelline armchairs and marble tables"
+  "alt.salon": "The room at La Sacristía: red velvet canopy, a large gilt-framed painting, flowers, Isabelline armchairs and marble tables",
+  "alt.joyas": "Silver rings made from spoons and a fork, worn on a hand among pink flowers"
 }

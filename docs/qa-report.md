@@ -88,3 +88,6 @@ Comprobado en local con Playwright a 1880, 1440 y 390 px (ES y EN):
 - Titulares con `text-wrap: balance` y párrafos con `pretty`: la frase del mostrador queda en dos líneas equilibradas.
 - Sin scroll horizontal y 0 errores de consola.
 - Publicado y verificado en la URL pública (ES y EN, 390 y 1440 px): cajón abierto al pasar el ratón (≈ 67 px de interior), foto y ficha a la misma altura en escritorio (477/477 ES, 433/433 EN), centros de los cuadros alineados (230 px / 166 px), pieza I = salón del baldaquino con su imagen cargada, sin scroll horizontal y 0 respuestas ≥ 400.
+
+## Vitrina de Natalia con foto real — 05/11/2026
+Investigadas Google Maps (11 fotos y las de 5 reseñas, vista limitada sin sesión), TripAdvisor, Restaurant Guru y Sluurpy. No aparece ninguna foto de la vitrina en sí; sí una de los anillos, en la reseña que la menciona. La pieza VII pasa de cartela vacía a cuadro con lámpara y se corrige el texto: se elimina que estén a la venta y que todas sean de cubiertos, porque no está confirmado.

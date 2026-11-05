@@ -352,17 +352,10 @@ body.menu-abierto { overflow: hidden; }
 .pieza .marco { aspect-ratio: 4 / 3; }
 .pieza--alta { width: 64vw; max-width: 340px; }
 .pieza--alta .marco { aspect-ratio: 3 / 4; }
-.pieza--texto { width: 64vw; max-width: 330px; }
 .cartela { border-top: 1px solid var(--oro-25); padding-top: 14px; }
 .cartela__n { font: 500 10.5px/1 var(--sans); letter-spacing: .3em; color: var(--oro); }
 .cartela h4 { font: 400 24px/1.15 var(--serif); margin: 10px 0 8px; }
 .cartela p { font-size: 15px; color: var(--cera-70); }
-.cartela--sola {
-  border: 1px solid var(--oro-50); outline: 1px solid var(--oro-25); outline-offset: -7px; padding: 34px 26px;
-  display: flex; flex-direction: column; justify-content: flex-end; width: 100%; height: 100%;
-  background: radial-gradient(80% 60% at 50% 20%, rgba(201,165,92,.12), transparent 70%);
-}
-.cartela--sola h4 { font-size: 30px; }
 
 /* ---------- II · aguas ---------- */
 .aguas {
@@ -800,7 +793,6 @@ body.menu-abierto { overflow: hidden; }
   .inventario__lista { --muro: min(32vw, 533px); gap: 48px; padding-left: max(var(--margen), calc((100vw - var(--ancho)) / 2)); scroll-padding-left: max(var(--margen), calc((100vw - var(--ancho)) / 2)); }
   .pieza { width: 34vw; max-width: 560px; }
   .pieza--alta { width: 24vw; max-width: 400px; }
-  .pieza--texto { width: 22vw; max-width: 360px; }
 
   .aguas__titulo { margin-bottom: 80px; }
   .aguas__grid { grid-template-columns: 5fr 5fr 3fr; align-items: start; gap: 4.5vw; }

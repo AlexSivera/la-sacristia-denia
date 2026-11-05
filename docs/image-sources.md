@@ -21,11 +21,19 @@ Uso para la demo comercial. **Antes de publicar como web definitiva, confirmar c
 | `bustos` | El museo | TripAdvisor, foto "Detalles" (subida por el propietario) | |
 | `vermut` | Carta · Vermut | TripAdvisor, foto "Ven y disfruta de nuestro…" (propietario) | |
 | (`raw/ta/ta-10`, salón del terciopelo) | Sin usar | TripAdvisor | Reserva. |
+| `joyas-natalia` | Inventario VII | Google Maps, foto de la reseña de Miriam M. (`raw/resenas/miriam-1.jpg`), la que menciona la vitrina | Foto de una clienta: pedir permiso o repetirla. Sus anillos se atribuyen a Natalia por la respuesta del propietario a esa reseña; confirmarlo. |
 | `agua-vertido` | Aguas | Instagram @lasacristiacafedenia, 15/12/2025 | Producto real, muy buena. |
 | `agua-copas` | Aguas, Carta | Instagram, 15/12/2025 | |
 | `white-cocoorange` | Carta · Cócteles | Instagram, 17/12/2025 | |
 
 Descartadas: fotos con clientes en primer plano, flyers de eventos, imágenes de otros locales que TripAdvisor mezcla en la galería, ensaladilla con botella de marca.
+
+## Material real localizado y sin usar (05/11/2026)
+- Techo de plumas con lámpara de araña: `raw/resenas/cynthia-3.jpg`, `jmm-4.jpg`, `dolores-4.jpg`.
+- Confesionario completo, con reclinatorio y los rótulos HOMBRES / MUJERES: `raw/resenas/dolores-2.jpg`.
+- Sala del sofá dorado con cuadros: `raw/resenas/jmm-2.jpg`.
+- Cartel propio «Agua de Dénia» (mujer, Montgó y limones) y fachada con la pizarra: solo en mosaicos de baja resolución (`raw/dir/d-10.jpg`, `d-11.jpg`). Pedir el original al local.
+- Las fotos de comida de Restaurant Guru (`raw/dir/d-18` a `d-46`) son genéricas, no del local: no usar.
 
 ## Stock provisional
 | Archivo | Sección | Fuente | Licencia | Sustituir por |

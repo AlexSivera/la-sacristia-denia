@@ -3,3 +3,4 @@ dist/
 raw/
 .playwright-mcp/
 *.log
+docs/capturas/
