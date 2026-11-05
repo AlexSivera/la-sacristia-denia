@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>La Sacristía · Coctelería y café de arte en Dénia</title>
-  <meta name="description" content="Coctelería y café de arte en un antiguo garaje del centro de Dénia convertido en museo barroco. Agua de Dénia, cócteles de autor, vermut y música en directo los jueves. C/ Pare Pere 4 · 865 59 27 59.">
+  <title data-t="meta.title">La Sacristía · Coctelería y café de arte en Dénia</title>
+  <meta name="description" content="Coctelería y café de arte en un antiguo garaje del centro de Dénia convertido en museo barroco. Agua de Dénia, cócteles de autor, vermut y música en directo los jueves. C/ Pare Pere 4 · 865 59 27 59." data-ta="content:meta.desc">
   <meta name="theme-color" content="#0e0b0d">
-  <link rel="canonical" href="{{SITE_URL}}">
+  <link rel="canonical" href="{{SITE_URL}}" data-ta="href:meta.canonical">
+  <link rel="alternate" hreflang="es" href="{{SITE_URL}}">
+  <link rel="alternate" hreflang="en" href="{{SITE_URL}}en.html">
+  <link rel="alternate" hreflang="x-default" href="{{SITE_URL}}">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:title" content="La Sacristía · Coctelería y café de arte en Dénia">
-  <meta property="og:description" content="Un museo barroco donde se sirven cócteles. Y el Agua de Dénia, que solo se sirve aquí.">
-  <meta property="og:url" content="{{SITE_URL}}">
+  <meta property="og:locale" content="es_ES" data-ta="content:meta.locale">
+  <meta property="og:title" content="La Sacristía · Coctelería y café de arte en Dénia" data-ta="content:meta.title">
+  <meta property="og:description" content="Un museo barroco donde se sirven cócteles. Y el Agua de Dénia, que solo se sirve aquí." data-ta="content:meta.ogdesc">
+  <meta property="og:url" content="{{SITE_URL}}" data-ta="content:meta.canonical">
   <meta property="og:image" content="{{SITE_URL}}assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -52,41 +55,42 @@
   </script>
 </head>
 <body>
-  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <a class="saltar" href="#contenido" data-t="ui.saltar">Saltar al contenido</a>
 
   <header class="cabecera" data-cabecera>
-    <a class="marca" href="#inicio" aria-label="La Sacristía, inicio">
+    <a class="marca" href="#inicio" aria-label="La Sacristía, inicio" data-ta="aria-label:ui.marca">
       <span class="marca__nombre">La Sacristía</span>
       <span class="marca__lugar">Dénia · MMXXI</span>
     </a>
-    <nav class="nav" aria-label="Principal">
+    <nav class="nav" aria-label="Principal" data-ta="aria-label:ui.navPrincipal">
       <ul>
-        <li><a href="#museo">El museo</a></li>
-        <li><a href="#aguas">Aguas</a></li>
-        <li><a href="#carta">Carta</a></li>
-        <li><a href="#jueves">Jueves</a></li>
-        <li><a href="#visita">Visita</a></li>
+        <li><a href="#museo" data-t="nav.museo">El museo</a></li>
+        <li><a href="#aguas" data-t="nav.aguas">Aguas</a></li>
+        <li><a href="#carta" data-t="nav.carta">Carta</a></li>
+        <li><a href="#jueves" data-t="nav.jueves">Jueves</a></li>
+        <li><a href="#visita" data-t="nav.visita">Visita</a></li>
       </ul>
     </nav>
-    <a class="btn btn--oro btn--chico cabecera__reservar" href="tel:+34865592759">Reservar</a>
+    <a class="idioma" href="en.html" hreflang="en" lang="en" aria-label="English version" data-ta="href:idioma.href,hreflang:idioma.hreflang,lang:idioma.lang,aria-label:idioma.aria" data-t="idioma.txt">EN</a>
+    <a class="btn btn--oro btn--chico cabecera__reservar" href="tel:+34865592759" data-t="ui.reservar">Reservar</a>
     <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" data-menu-boton>
-      <span class="menu-boton__txt">Menú</span><span class="menu-boton__icono" aria-hidden="true"></span>
+      <span class="menu-boton__txt" data-t="ui.menu">Menú</span><span class="menu-boton__icono" aria-hidden="true"></span>
     </button>
   </header>
 
   <div class="menu" id="menu" data-menu hidden>
-    <nav aria-label="Menú">
+    <nav aria-label="Menú" data-ta="aria-label:ui.menu">
       <ol class="menu__lista">
-        <li><a href="#museo"><span>I</span>El museo</a></li>
-        <li><a href="#aguas"><span>II</span>Las aguas</a></li>
-        <li><a href="#carta"><span>III</span>La carta</a></li>
-        <li><a href="#confesionario"><span>IV</span>El confesionario</a></li>
-        <li><a href="#jueves"><span>V</span>Jueves de directo</a></li>
-        <li><a href="#visita"><span>VI</span>La visita</a></li>
+        <li><a href="#museo"><span>I</span><b data-t="menu.museo">El museo</b></a></li>
+        <li><a href="#aguas"><span>II</span><b data-t="menu.aguas">Las aguas</b></a></li>
+        <li><a href="#carta"><span>III</span><b data-t="menu.carta">La carta</b></a></li>
+        <li><a href="#confesionario"><span>IV</span><b data-t="menu.confesionario">El confesionario</b></a></li>
+        <li><a href="#jueves"><span>V</span><b data-t="menu.jueves">Jueves de directo</b></a></li>
+        <li><a href="#visita"><span>VI</span><b data-t="menu.visita">La visita</b></a></li>
       </ol>
     </nav>
     <div class="menu__pie">
-      <a class="btn btn--oro" href="tel:+34865592759">Reservar · 865 59 27 59</a>
+      <a class="btn btn--oro" href="tel:+34865592759" data-t="menu.reservar">Reservar · 865 59 27 59</a>
       <p class="menu__estado" data-estado-corto></p>
     </div>
   </div>
@@ -98,15 +102,15 @@
       <div class="contrabarra">
         <picture>
           <source media="(min-width: 760px)" data-img="hero-barra" sizes="100vw">
-          <img data-img="hero-barra-m" sizes="100vw" alt="La barra de La Sacristía entre dos soles dorados y pilares de ladrillo del antiguo garaje, con lámparas de cristal, cartelas doradas y cortinaje de terciopelo rojo" loading="eager" fetchpriority="high">
+          <img data-img="hero-barra-m" sizes="100vw" alt="La barra de La Sacristía entre dos soles dorados y pilares de ladrillo del antiguo garaje, con lámparas de cristal, cartelas doradas y cortinaje de terciopelo rojo" data-ta="alt:alt.hero" loading="eager" fetchpriority="high">
         </picture>
         <span class="vela" aria-hidden="true"></span>
       </div>
 
       <div class="mostrador">
-        <a class="reservado" href="tel:+34865592759" aria-label="Reservar mesa: llamar al 865 59 27 59">
-          <span class="reservado__kicker" aria-hidden="true">Reservado</span>
-          <span class="reservado__accion">Reservar mesa</span>
+        <a class="reservado" href="tel:+34865592759" aria-label="Reservar mesa: llamar al 865 59 27 59" data-ta="aria-label:hero.reservadoAria">
+          <span class="reservado__kicker" aria-hidden="true" data-t="hero.reservado">Reservado</span>
+          <span class="reservado__accion" data-t="hero.reservar">Reservar mesa</span>
           <span class="reservado__tel">865 59 27 59</span>
         </a>
 
@@ -115,17 +119,16 @@
             <h1 class="hero__titulo" id="titulo">
               <span class="hero__la">La</span>
               <span class="hero__nombre">Sacristía</span>
-              <span class="hero__sub">Coctelería y café de arte · Dénia</span>
+              <span class="hero__sub" data-t="hero.sub">Coctelería y café de arte · Dénia</span>
             </h1>
-            <p class="estado" data-estado><span class="estado__punto" aria-hidden="true"></span><span data-estado-txt>Abrimos todos los días por la tarde</span></p>
+            <p class="estado" data-estado><span class="estado__punto" aria-hidden="true"></span><span data-estado-txt data-t="hero.estado">Abrimos todos los días por la tarde</span></p>
           </div>
-          <div class="frente__panel frente__panel--texto">
-            <p class="hero__lead">Restauradores de arte convirtieron un garaje del centro de Dénia en un museo barroco con barra. Terciopelo, pan de oro, una Inmaculada del siglo&nbsp;XVII… y el <em>Agua de Dénia</em>, que solo se sirve aquí.</p>
-            <a class="hero__carta" href="#carta">Ver la carta <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="frente__panel frente__panel--placa">
-            <p class="placa">Antiguo garaje de autobuses <strong>Sacristía desde MMXXI</strong></p>
-          </div>
+          <p class="frente__lema" data-t="hero.lema">Terciopelo, pan de oro y el <em>Agua de Dénia</em>, que solo se sirve aquí.</p>
+          <nav class="cajones" aria-label="Cajones de la barra" data-ta="aria-label:hero.cajonesAria">
+            <a class="cajon" href="#carta"><span class="cajon__etiqueta"><span class="cajon__n">I</span><span data-t="hero.cajon1">La carta</span></span><span class="cajon__tirador" aria-hidden="true"></span></a>
+            <a class="cajon" href="#aguas"><span class="cajon__etiqueta"><span class="cajon__n">II</span><span data-t="hero.cajon2">Agua de Dénia</span></span><span class="cajon__tirador" aria-hidden="true"></span></a>
+            <a class="cajon" href="#visita"><span class="cajon__etiqueta"><span class="cajon__n">III</span><span data-t="hero.cajon3">Cómo llegar</span></span><span class="cajon__tirador" aria-hidden="true"></span></a>
+          </nav>
         </div>
         <span class="reposapies" aria-hidden="true"></span>
       </div>
@@ -134,20 +137,30 @@
     <!-- ============ I · EL MUSEO ============ -->
     <section class="museo" id="museo" aria-labelledby="museo-titulo">
       <div class="museo__intro">
-        <p class="capitulo"><span>I</span> El museo</p>
-        <h2 class="museo__titulo revela" id="museo-titulo">Aquí aparcaban autobuses. <em>Hoy hay una Inmaculada del siglo&nbsp;XVII junto a la barra.</em></h2>
+        <p class="capitulo"><span>I</span> <b data-t="museo.cap">El museo</b></p>
+        <h2 class="museo__titulo revela" id="museo-titulo" data-t="museo.titulo">Aquí aparcaban autobuses. <em>Hoy hay una Inmaculada del siglo&nbsp;XVII junto a la barra.</em></h2>
 
         <div class="museo__cuerpo">
           <figure class="museo__foto marco revela">
-            <img data-img="bustos" sizes="(min-width: 1024px) 30vw, 88vw" alt="Bustos clásicos de mármol, bronce y escayola entre flores, en blanco y negro">
+            <img data-img="bustos" sizes="(min-width: 1024px) 30vw, 88vw" alt="Bustos clásicos de mármol, bronce y escayola entre flores, en blanco y negro" data-ta="alt:alt.bustos">
           </figure>
           <div class="museo__texto revela">
-            <p>La Sacristía nació en un antiguo garaje de la calle Pare Pere. La levantaron restauradores de mobiliario, pintura y arte antiguo que se conocieron restaurando el convento de San Antonio de Padua, aquí en Dénia.</p>
-            <p>Sillones isabelinos, bustos, lámparas de araña, soles dorados: cada pieza llegó de rastros, anticuarios y casas particulares —casi todas de España, alguna de Francia o Inglaterra— y pasó por sus manos antes de colgar de estas paredes. Antes de abrir, se calienta incienso.</p>
+            <div class="ficha">
+              <p class="ficha__kicker" data-t="ficha.kicker">Ficha técnica</p>
+              <dl class="ficha__lista">
+                <div><dt data-t="ficha.obraT">Obra</dt><dd>La Sacristía</dd></div>
+                <div><dt data-t="ficha.lugarT">Lugar</dt><dd data-t="ficha.lugar">Un antiguo garaje de autobuses de la calle Pare Pere, en Dénia</dd></div>
+                <div><dt data-t="ficha.tecnicaT">Técnica</dt><dd data-t="ficha.tecnica">Pan de oro, terciopelo, ladrillo visto e incienso antes de abrir</dd></div>
+                <div><dt data-t="ficha.restT">Restauración</dt><dd data-t="ficha.rest">Restauradores de mobiliario, pintura y arte antiguo, que se conocieron restaurando el convento de San Antonio de Padua</dd></div>
+                <div><dt data-t="ficha.procT">Procedencia</dt><dd data-t="ficha.proc">Rastros, anticuarios y casas particulares de España; alguna pieza, de Francia e Inglaterra</dd></div>
+                <div><dt data-t="ficha.anoT">Año</dt><dd>MMXXI</dd></div>
+                <div><dt data-t="ficha.estadoT">Conservación</dt><dd data-ficha-estado data-t="ficha.estado">Excelente</dd></div>
+              </dl>
+            </div>
             <dl class="definicion">
-              <dt>sacristía <span>(f.)</span></dt>
-              <dd><span>1.</span> Lugar de la iglesia donde se guardan los ornamentos sagrados.</dd>
-              <dd><span>2.</span> En Dénia: donde se guardan los dorados y se sirven las aguas.</dd>
+              <dt data-t="def.dt">sacristía <span>(f.)</span></dt>
+              <dd><span>1.</span> <i data-t="def.1">Lugar de la iglesia donde se guardan los ornamentos sagrados.</i></dd>
+              <dd><span>2.</span> <i data-t="def.2">En Dénia: donde se guardan los dorados y se sirven las aguas.</i></dd>
             </dl>
           </div>
         </div>
@@ -155,40 +168,40 @@
 
       <div class="inventario" aria-labelledby="inventario-titulo">
         <div class="inventario__cabeza">
-          <h3 class="inventario__titulo" id="inventario-titulo">Inventario <em>de la casa</em></h3>
-          <p class="inventario__nota">Siete piezas de una colección que no cabe en una web. Deslice.</p>
+          <h3 class="inventario__titulo" id="inventario-titulo" data-t="inv.titulo">Inventario <em>de la casa</em></h3>
+          <p class="inventario__nota" data-t="inv.nota">Siete piezas de una colección que no cabe en una web. Deslice.</p>
           <div class="inventario__flechas">
-            <button class="flecha" type="button" data-inv="-1" aria-label="Pieza anterior">←</button>
-            <button class="flecha" type="button" data-inv="1" aria-label="Pieza siguiente">→</button>
+            <button class="flecha" type="button" data-inv="-1" aria-label="Pieza anterior" data-ta="aria-label:inv.ant">←</button>
+            <button class="flecha" type="button" data-inv="1" aria-label="Pieza siguiente" data-ta="aria-label:inv.sig">→</button>
           </div>
         </div>
-        <ol class="inventario__lista" data-inventario tabindex="0" aria-label="Piezas del inventario">
+        <ol class="inventario__lista" data-inventario tabindex="0" aria-label="Piezas del inventario" data-ta="aria-label:inv.aria">
           <li class="pieza">
-            <figure class="marco"><img data-img="barra-soles" sizes="(min-width: 1024px) 34vw, 80vw" alt="La barra entre dos soles dorados, lámparas de cristal y cortinas rojas"></figure>
-            <div class="cartela"><span class="cartela__n">Nº I</span><h4>La barra de los soles</h4><p>Dos soles dorados, lámparas de cristal y la botillería a la vista. Aquí nacen las aguas.</p></div>
+            <figure class="marco"><img data-img="barra-soles" sizes="(min-width: 1024px) 34vw, 80vw" alt="La barra entre dos soles dorados, lámparas de cristal y cortinas rojas" data-ta="alt:alt.soles"></figure>
+            <div class="cartela"><span class="cartela__n">Nº I</span><h4 data-t="inv.1t">La barra de los soles</h4><p data-t="inv.1p">Dos soles dorados, lámparas de cristal y la botillería a la vista. Aquí nacen las aguas.</p></div>
           </li>
           <li class="pieza pieza--alta">
-            <figure class="marco"><img data-img="altar-inmaculada" sizes="(min-width: 1024px) 26vw, 70vw" alt="Talla de la Inmaculada en un altar con velas, flanqueado por cortinajes azules"></figure>
-            <div class="cartela"><span class="cartela__n">Nº II</span><h4>La Inmaculada</h4><p>Talla del siglo XVII, restaurada en casa: hubo que recuperar el tono de su piel y el azul de su manto.</p></div>
+            <figure class="marco"><img data-img="altar-inmaculada" sizes="(min-width: 1024px) 26vw, 70vw" alt="Talla de la Inmaculada en un altar con velas, flanqueado por cortinajes azules" data-ta="alt:alt.inmaculada"></figure>
+            <div class="cartela"><span class="cartela__n">Nº II</span><h4 data-t="inv.2t">La Inmaculada</h4><p data-t="inv.2p">Talla del siglo XVII, restaurada en casa: hubo que recuperar el tono de su piel y el azul de su manto.</p></div>
           </li>
           <li class="pieza pieza--alta">
-            <figure class="marco"><img data-img="confesionario" sizes="(min-width: 1024px) 24vw, 66vw" alt="Confesionario de madera con una casulla morada y dorada"></figure>
-            <div class="cartela"><span class="cartela__n">Nº III</span><h4>El confesionario</h4><p>Madera tallada, casulla morada y rejilla. Se escuchan confesiones; las absoluciones, en barra.</p></div>
+            <figure class="marco"><img data-img="confesionario" sizes="(min-width: 1024px) 24vw, 66vw" alt="Confesionario de madera con una casulla morada y dorada" data-ta="alt:alt.confesionarioInv"></figure>
+            <div class="cartela"><span class="cartela__n">Nº III</span><h4 data-t="inv.3t">El confesionario</h4><p data-t="inv.3p">Madera tallada, casulla morada y rejilla. Se escuchan confesiones; las absoluciones, en barra.</p></div>
           </li>
           <li class="pieza pieza--alta">
-            <figure class="marco"><img data-img="espejo-velas" sizes="(min-width: 1024px) 26vw, 70vw" alt="Espejo dorado rodeado de rosas, con un busto blanco y candelabros de velas"></figure>
-            <div class="cartela"><span class="cartela__n">Nº IV</span><h4>El espejo de las velas</h4><p>Rosas, candelabros y un busto que vigila la sala sin pestañear.</p></div>
+            <figure class="marco"><img data-img="espejo-velas" sizes="(min-width: 1024px) 26vw, 70vw" alt="Espejo dorado rodeado de rosas, con un busto blanco y candelabros de velas" data-ta="alt:alt.espejo"></figure>
+            <div class="cartela"><span class="cartela__n">Nº IV</span><h4 data-t="inv.4t">El espejo de las velas</h4><p data-t="inv.4p">Rosas, candelabros y un busto que vigila la sala sin pestañear.</p></div>
           </li>
           <li class="pieza">
-            <figure class="marco"><img data-img="barra-querubin" sizes="(min-width: 1024px) 34vw, 80vw" alt="Querubín tallado en primer plano y, al fondo, la barra con lámparas doradas"></figure>
-            <div class="cartela"><span class="cartela__n">Nº V</span><h4>El querubín de guardia</h4><p>Vigila la barra desde su peana. No se le ha visto pedir nunca.</p></div>
+            <figure class="marco"><img data-img="barra-querubin" sizes="(min-width: 1024px) 34vw, 80vw" alt="Querubín tallado en primer plano y, al fondo, la barra con lámparas doradas" data-ta="alt:alt.querubin"></figure>
+            <div class="cartela"><span class="cartela__n">Nº V</span><h4 data-t="inv.5t">El querubín de guardia</h4><p data-t="inv.5p">Vigila la barra desde su peana. No se le ha visto pedir nunca.</p></div>
           </li>
           <li class="pieza pieza--alta">
-            <figure class="marco"><img data-img="rincon-azul" sizes="(min-width: 1024px) 26vw, 70vw" alt="Rincón con sofá dorado bajo un techo de luces azules y un gran cuadro antiguo"></figure>
-            <div class="cartela"><span class="cartela__n">Nº VI</span><h4>El rincón azul</h4><p>Un cielo de luces sobre el sofá dorado. Para las conversaciones largas.</p></div>
+            <figure class="marco"><img data-img="rincon-azul" sizes="(min-width: 1024px) 26vw, 70vw" alt="Rincón con sofá dorado bajo un techo de luces azules y un gran cuadro antiguo" data-ta="alt:alt.rincon"></figure>
+            <div class="cartela"><span class="cartela__n">Nº VI</span><h4 data-t="inv.6t">El rincón azul</h4><p data-t="inv.6p">Un cielo de luces sobre el sofá dorado. Para las conversaciones largas.</p></div>
           </li>
           <li class="pieza pieza--texto">
-            <div class="cartela cartela--sola"><span class="cartela__n">Nº VII</span><h4>La vitrina de Natalia</h4><p>Joyas artesanales hechas con cubiertos, obra de la artista Natalia. Pregunte por ellas: se pueden llevar a casa sin pecar.</p></div>
+            <div class="cartela cartela--sola"><span class="cartela__n">Nº VII</span><h4 data-t="inv.7t">La vitrina de Natalia</h4><p data-t="inv.7p">Joyas artesanales hechas con cubiertos, obra de la artista Natalia. Pregunte por ellas: se pueden llevar a casa sin pecar.</p></div>
           </li>
         </ol>
       </div>
@@ -196,118 +209,155 @@
 
     <!-- ============ II · LAS AGUAS ============ -->
     <section class="aguas" id="aguas" aria-labelledby="aguas-titulo">
-      <p class="capitulo"><span>II</span> Las aguas espirituosas</p>
+      <p class="capitulo"><span>II</span> <b data-t="aguas.cap">Las aguas espirituosas</b></p>
       <h2 class="aguas__titulo" id="aguas-titulo" data-agua>Agua <em>de</em> Dénia</h2>
 
       <div class="aguas__grid">
         <figure class="estampa aguas__foto revela">
           <div class="estampa__papel">
-            <img data-img="agua-vertido" sizes="(min-width: 1024px) 28vw, 70vw" alt="Agua de Dénia de color turquesa vertida desde una garrafa a una copa alta">
-            <figcaption class="estampa__pie"><span class="estampa__nombre">Agua de Dénia</span><span class="estampa__recuerdo">Recuerdo de La Sacristía</span></figcaption>
+            <img data-img="agua-vertido" sizes="(min-width: 1024px) 28vw, 70vw" alt="Agua de Dénia de color turquesa vertida desde una garrafa a una copa alta" data-ta="alt:alt.vertido">
+            <figcaption class="estampa__pie"><span class="estampa__nombre">Agua de Dénia</span><span class="estampa__recuerdo" data-t="aguas.recuerdo">Recuerdo de La Sacristía</span></figcaption>
           </div>
         </figure>
 
         <div class="aguas__texto">
-          <p class="aguas__lead revela">La más emblemática de la casa y la preferida de los feligreses: <strong>limón</strong>, un toque dulce de <strong>curaçao</strong>, el final burbujeante del <strong>cava</strong> y una combinación secreta que no sale de la sacristía.</p>
+          <p class="aguas__lead revela" data-t="aguas.lead">La más emblemática de la casa y la preferida de los feligreses: <strong>limón</strong>, un toque dulce de <strong>curaçao</strong>, el final burbujeante del <strong>cava</strong> y una combinación secreta que no sale de la sacristía.</p>
 
           <div class="sellos revela" aria-labelledby="sellos-titulo">
-            <p class="sellos__titulo" id="sellos-titulo">Seis ingredientes secretos</p>
+            <p class="sellos__titulo" id="sellos-titulo" data-t="aguas.sellos">Seis ingredientes secretos</p>
             <ul class="sellos__lista">
-              <li><button class="sello" type="button" aria-label="Secreto I">I</button></li>
-              <li><button class="sello" type="button" aria-label="Secreto II">II</button></li>
-              <li><button class="sello" type="button" aria-label="Secreto III">III</button></li>
-              <li><button class="sello" type="button" aria-label="Secreto IV">IV</button></li>
-              <li><button class="sello" type="button" aria-label="Secreto V">V</button></li>
-              <li><button class="sello" type="button" aria-label="Secreto VI">VI</button></li>
+              <li><button class="sello" type="button" aria-label="Secreto I" data-ta="aria-label:aguas.s1">I</button></li>
+              <li><button class="sello" type="button" aria-label="Secreto II" data-ta="aria-label:aguas.s2">II</button></li>
+              <li><button class="sello" type="button" aria-label="Secreto III" data-ta="aria-label:aguas.s3">III</button></li>
+              <li><button class="sello" type="button" aria-label="Secreto IV" data-ta="aria-label:aguas.s4">IV</button></li>
+              <li><button class="sello" type="button" aria-label="Secreto V" data-ta="aria-label:aguas.s5">V</button></li>
+              <li><button class="sello" type="button" aria-label="Secreto VI" data-ta="aria-label:aguas.s6">VI</button></li>
             </ul>
-            <p class="sellos__resp" aria-live="polite" data-sellos-resp>Toque un sello.</p>
+            <p class="sellos__resp" aria-live="polite" data-sellos-resp data-t="aguas.toque">Toque un sello.</p>
           </div>
 
-          <p class="aguas__garrafa revela">Se sirve en garrafa, para compartir. <em>Y solo aquí.</em></p>
+          <p class="aguas__garrafa revela" data-t="aguas.garrafa">Se sirve en garrafa, para compartir. <em>Y solo aquí.</em></p>
         </div>
 
         <figure class="estampa estampa--chica aguas__copas revela">
           <div class="estampa__papel">
-            <img data-img="agua-copas" sizes="(min-width: 1024px) 18vw, 46vw" alt="Dos copas altas de Agua de Dénia sobre una mesa de mármol, con el salón dorado desenfocado al fondo">
-            <figcaption class="estampa__pie"><span class="estampa__nombre">Para dos</span></figcaption>
+            <img data-img="agua-copas" sizes="(min-width: 1024px) 18vw, 46vw" alt="Dos copas altas de Agua de Dénia sobre una mesa de mármol, con el salón dorado desenfocado al fondo" data-ta="alt:alt.copas">
+            <figcaption class="estampa__pie"><span class="estampa__nombre" data-t="aguas.paraDos">Para dos</span></figcaption>
           </div>
         </figure>
       </div>
 
       <div class="familia revela">
-        <p class="familia__titulo">La familia de las aguas</p>
+        <p class="familia__titulo" data-t="aguas.familia">La familia de las aguas</p>
         <ul class="familia__lista">
-          <li><span>Agua de Valencia</span><em>La clásica de la tierra.</em></li>
-          <li><span>Agua de la Sacristía</span><em>La de la casa.</em></li>
-          <li><span>Agua del Edén</span><em>Su receta, en barra.</em></li>
+          <li><span>Agua de Valencia</span><em data-t="aguas.f1">La clásica de la tierra.</em></li>
+          <li><span>Agua de la Sacristía</span><em data-t="aguas.f2">La de la casa.</em></li>
+          <li><span>Agua del Edén</span><em data-t="aguas.f3">Su receta, en barra.</em></li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ III · LA CARTA ============ -->
+    <!-- ============ III · LA CARTA: el misal de la casa ============ -->
     <section class="carta" id="carta" aria-labelledby="carta-titulo">
       <div class="carta__cabeza">
-        <p class="capitulo"><span>III</span> La carta</p>
-        <h2 class="carta__titulo" id="carta-titulo">Para cada pecado, <em>una copa.</em></h2>
-        <p class="carta__nota">Una selección. La carta completa y los precios, en el local.</p>
+        <p class="capitulo"><span>III</span> <b data-t="carta.cap">La carta</b></p>
+        <h2 class="carta__titulo" id="carta-titulo" data-t="carta.titulo">Para cada pecado, <em>una copa.</em></h2>
+        <p class="carta__nota" data-t="carta.nota">El misal de la casa: tire de una cinta. Es una selección; la carta completa y los precios, en el local.</p>
       </div>
 
-      <div class="pestanas" role="tablist" aria-label="Secciones de la carta" data-pestanas>
-        <button role="tab" id="t-aguas" aria-controls="p-aguas" aria-selected="true">Aguas</button>
-        <button role="tab" id="t-cocteles" aria-controls="p-cocteles" aria-selected="false" tabindex="-1">Cócteles</button>
-        <button role="tab" id="t-vinos" aria-controls="p-vinos" aria-selected="false" tabindex="-1">Vermut, vino y cava</button>
-        <button role="tab" id="t-cafe" aria-controls="p-cafe" aria-selected="false" tabindex="-1">Café y dulce</button>
-        <button role="tab" id="t-picar" aria-controls="p-picar" aria-selected="false" tabindex="-1">Para picar</button>
-      </div>
+      <div class="misal">
+        <div class="cintas" role="tablist" aria-label="Secciones de la carta" data-ta="aria-label:carta.aria" data-pestanas>
+          <button class="cinta" role="tab" id="t-aguas" aria-controls="p-aguas" aria-selected="true" style="--cinta:#2fd0bd;--cinta-txt:#0b2a27"><span data-t="carta.c1">Aguas</span></button>
+          <button class="cinta" role="tab" id="t-cocteles" aria-controls="p-cocteles" aria-selected="false" tabindex="-1" style="--cinta:#9e1b32;--cinta-txt:#f8e9d4"><span data-t="carta.c2">Cócteles</span></button>
+          <button class="cinta" role="tab" id="t-vinos" aria-controls="p-vinos" aria-selected="false" tabindex="-1" style="--cinta:#5d2a73;--cinta-txt:#f4e7f6"><span data-t="carta.c3">Vermut</span></button>
+          <button class="cinta" role="tab" id="t-cafe" aria-controls="p-cafe" aria-selected="false" tabindex="-1" style="--cinta:#efe3c4;--cinta-txt:#5a3d12"><span data-t="carta.c4">Café</span></button>
+          <button class="cinta" role="tab" id="t-picar" aria-controls="p-picar" aria-selected="false" tabindex="-1" style="--cinta:#2e6b45;--cinta-txt:#eef6ef"><span data-t="carta.c5">Picar</span></button>
+        </div>
 
-      <div class="paneles">
-        <div class="panel" role="tabpanel" id="p-aguas" aria-labelledby="t-aguas" tabindex="0">
-          <figure class="panel__foto marco"><img data-img="agua-copas" sizes="(min-width: 1024px) 30vw, 88vw" alt="Dos copas de Agua de Dénia"></figure>
-          <ol class="platos">
-            <li><span class="platos__n">01</span><h3>Agua de Dénia</h3><p>Limón, curaçao, cava y una combinación secreta. En garrafa.</p><span class="platos__tag">Solo aquí</span></li>
-            <li><span class="platos__n">02</span><h3>Agua de Valencia</h3><p>La clásica valenciana, a la manera de la casa.</p></li>
-            <li><span class="platos__n">03</span><h3>Agua de la Sacristía</h3><p>La que lleva el nombre de la casa.</p></li>
-            <li><span class="platos__n">04</span><h3>Agua del Edén</h3><p>Pregunte en barra.</p></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="p-cocteles" aria-labelledby="t-cocteles" tabindex="0" hidden>
-          <figure class="panel__foto marco"><img data-img="white-cocoorange" sizes="(min-width: 1024px) 30vw, 88vw" alt="White Cocoorange en vaso de cristal tallado con piel de naranja, sobre mesa de mármol"></figure>
-          <ol class="platos">
-            <li><span class="platos__n">05</span><h3>White Cocoorange</h3><p>Licor de coco, batida de coco y triple seco, con confitura de canela y piel de naranja.</p><span class="platos__tag">De autor</span></li>
-            <li><span class="platos__n">06</span><h3>Gin tonic rosa</h3><p>El de las tardes largas.</p></li>
-            <li><span class="platos__n">07</span><h3>Aperol Spritz</h3><p>Para empezar el tardeo.</p></li>
-            <li><span class="platos__n">08</span><h3>Moscow Mule</h3><p>El clásico del jengibre.</p></li>
-            <li><span class="platos__n">09</span><h3>Negroni</h3><p>Amargo, de los de antes.</p></li>
-            <li><span class="platos__n">10</span><h3>Sin alcohol</h3><p>Cócteles sin alcohol: pregunte por los del día.</p></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="p-vinos" aria-labelledby="t-vinos" tabindex="0" hidden>
-          <figure class="panel__foto marco"><img data-img="vermut" sizes="(min-width: 1024px) 30vw, 88vw" alt="Vermut con naranja en copa de cristal tallado, entre flores y cítricos"></figure>
-          <ol class="platos">
-            <li><span class="platos__n">11</span><h3>Vermut</h3><p>En copa tallada, con su piel de naranja.</p></li>
-            <li><span class="platos__n">12</span><h3>Champagne Alfred Gratien</h3><p>Para lo que haya que celebrar.</p></li>
-            <li><span class="platos__n">13</span><h3>Cavas</h3><p>La base de las aguas, también a solas.</p></li>
-            <li><span class="platos__n">14</span><h3>Vino rosado de la casa</h3><p>Fresco, de tarde.</p></li>
-            <li><span class="platos__n">15</span><h3>Moscatel</h3><p>Dulce, de copita.</p></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="p-cafe" aria-labelledby="t-cafe" tabindex="0" hidden>
-          <figure class="panel__foto marco"><img data-img="cafe" sizes="(min-width: 1024px) 30vw, 88vw" alt="Café con nata y cacao en vaso de cristal sobre mesa de mármol"></figure>
-          <ol class="platos">
-            <li><span class="platos__n">16</span><h3>Capuccino</h3><p>Y el resto de cafés e infusiones.</p></li>
-            <li><span class="platos__n">17</span><h3>Tarta de chocolate con naranja amarga</h3><p>Casera.</p></li>
-            <li><span class="platos__n">18</span><h3>Tarta de calabaza</h3><p>Casera.</p></li>
-            <li><span class="platos__n">19</span><h3>Carrot cake</h3><p>Casera, y con capuccino mejor.</p></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="p-picar" aria-labelledby="t-picar" tabindex="0" hidden>
-          <figure class="panel__foto marco"><img data-img="champagne" sizes="(min-width: 1024px) 30vw, 88vw" alt="Botella de champagne Alfred Gratien y copas sobre la barra de madera"></figure>
-          <ol class="platos">
-            <li><span class="platos__n">20</span><h3>Patatas artesanas</h3><p>Para acompañar la primera ronda.</p></li>
-            <li><span class="platos__n">21</span><h3>Queso semicurado</h3><p>Para compartir.</p></li>
-            <li><span class="platos__n">22</span><h3>Ensaladilla</h3><p>De tapa, como manda la tradición.</p></li>
-            <li><span class="platos__n">23</span><h3>Tapas del día</h3><p>Pregunte qué hay hoy.</p></li>
-          </ol>
+        <div class="misal__libro">
+          <div class="panel" role="tabpanel" id="p-aguas" aria-labelledby="t-aguas" tabindex="0" style="--cinta:#1f9e90">
+            <div class="pagina pagina--izq">
+              <p class="pagina__cabecera" data-t="carta.cabecera">Misal de la casa</p>
+              <figure class="lamina"><img data-img="agua-copas" sizes="(min-width: 1024px) 26vw, 76vw" alt="Dos copas de Agua de Dénia" data-ta="alt:alt.copasCarta"></figure>
+              <p class="pagina__rubrica" data-t="carta.r1">El Agua de Dénia se sirve en garrafa: pídala para compartir.</p>
+            </div>
+            <div class="pagina pagina--der">
+              <h3 class="pagina__titulo" data-t="carta.h1">Aguas espirituosas</h3>
+              <ol class="platos">
+                <li><span class="platos__n">01</span><h4>Agua de Dénia</h4><p data-t="carta.p01">Limón, curaçao, cava y una combinación secreta. En garrafa.</p><span class="platos__tag" data-t="carta.soloAqui">Solo aquí</span></li>
+                <li><span class="platos__n">02</span><h4>Agua de Valencia</h4><p data-t="carta.p02">La clásica valenciana, a la manera de la casa.</p></li>
+                <li><span class="platos__n">03</span><h4>Agua de la Sacristía</h4><p data-t="carta.p03">La que lleva el nombre de la casa.</p></li>
+                <li><span class="platos__n">04</span><h4>Agua del Edén</h4><p data-t="carta.p04">Pregunte en barra.</p></li>
+              </ol>
+            </div>
+          </div>
+          <div class="panel" role="tabpanel" id="p-cocteles" aria-labelledby="t-cocteles" tabindex="0" hidden style="--cinta:#9e1b32">
+            <div class="pagina pagina--izq">
+              <p class="pagina__cabecera" data-t="carta.cabecera">Misal de la casa</p>
+              <figure class="lamina"><img data-img="white-cocoorange" sizes="(min-width: 1024px) 26vw, 76vw" alt="White Cocoorange en vaso de cristal tallado con piel de naranja, sobre mesa de mármol" data-ta="alt:alt.cocoorange"></figure>
+              <p class="pagina__rubrica" data-t="carta.r2">Clásicos y de autor. Y sin alcohol, si mañana hay que madrugar.</p>
+            </div>
+            <div class="pagina pagina--der">
+              <h3 class="pagina__titulo" data-t="carta.h2">Cócteles</h3>
+              <ol class="platos">
+                <li><span class="platos__n">05</span><h4>White Cocoorange</h4><p data-t="carta.p05">Licor de coco, batida de coco y triple seco, con confitura de canela y piel de naranja.</p><span class="platos__tag" data-t="carta.deAutor">De autor</span></li>
+                <li><span class="platos__n">06</span><h4 data-t="carta.n06">Gin tonic rosa</h4><p data-t="carta.p06">El de las tardes largas.</p></li>
+                <li><span class="platos__n">07</span><h4>Aperol Spritz</h4><p data-t="carta.p07">Para empezar el tardeo.</p></li>
+                <li><span class="platos__n">08</span><h4>Moscow Mule</h4><p data-t="carta.p08">El clásico del jengibre.</p></li>
+                <li><span class="platos__n">09</span><h4>Negroni</h4><p data-t="carta.p09">Amargo, de los de antes.</p></li>
+                <li><span class="platos__n">10</span><h4 data-t="carta.n10">Sin alcohol</h4><p data-t="carta.p10">Cócteles sin alcohol: pregunte por los del día.</p></li>
+              </ol>
+            </div>
+          </div>
+          <div class="panel" role="tabpanel" id="p-vinos" aria-labelledby="t-vinos" tabindex="0" hidden style="--cinta:#5d2a73">
+            <div class="pagina pagina--izq">
+              <p class="pagina__cabecera" data-t="carta.cabecera">Misal de la casa</p>
+              <figure class="lamina"><img data-img="vermut" sizes="(min-width: 1024px) 26vw, 76vw" alt="Vermut con naranja en copa de cristal tallado, entre flores y cítricos" data-ta="alt:alt.vermut"></figure>
+              <p class="pagina__rubrica" data-t="carta.r3">De la copa tallada de vermut al champagne de las grandes ocasiones.</p>
+            </div>
+            <div class="pagina pagina--der">
+              <h3 class="pagina__titulo" data-t="carta.h3">Vermut, vino y cava</h3>
+              <ol class="platos">
+                <li><span class="platos__n">11</span><h4 data-t="carta.n11">Vermut</h4><p data-t="carta.p11">En copa tallada, con su piel de naranja.</p></li>
+                <li><span class="platos__n">12</span><h4>Champagne Alfred Gratien</h4><p data-t="carta.p12">Para lo que haya que celebrar.</p></li>
+                <li><span class="platos__n">13</span><h4 data-t="carta.n13">Cavas</h4><p data-t="carta.p13">La base de las aguas, también a solas.</p></li>
+                <li><span class="platos__n">14</span><h4 data-t="carta.n14">Vino rosado de la casa</h4><p data-t="carta.p14">Fresco, de tarde.</p></li>
+                <li><span class="platos__n">15</span><h4 data-t="carta.n15">Moscatel</h4><p data-t="carta.p15">Dulce, de copita.</p></li>
+              </ol>
+            </div>
+          </div>
+          <div class="panel" role="tabpanel" id="p-cafe" aria-labelledby="t-cafe" tabindex="0" hidden style="--cinta:#a8823a">
+            <div class="pagina pagina--izq">
+              <p class="pagina__cabecera" data-t="carta.cabecera">Misal de la casa</p>
+              <figure class="lamina"><img data-img="cafe" sizes="(min-width: 1024px) 26vw, 76vw" alt="Café con nata y cacao en vaso de cristal sobre mesa de mármol" data-ta="alt:alt.cafe"></figure>
+              <p class="pagina__rubrica" data-t="carta.r4">Tartas caseras para que la tarde se alargue.</p>
+            </div>
+            <div class="pagina pagina--der">
+              <h3 class="pagina__titulo" data-t="carta.h4">Café y dulce</h3>
+              <ol class="platos">
+                <li><span class="platos__n">16</span><h4>Capuccino</h4><p data-t="carta.p16">Y el resto de cafés e infusiones.</p></li>
+                <li><span class="platos__n">17</span><h4 data-t="carta.n17">Tarta de chocolate con naranja amarga</h4><p data-t="carta.casera">Casera.</p></li>
+                <li><span class="platos__n">18</span><h4 data-t="carta.n18">Tarta de calabaza</h4><p data-t="carta.casera">Casera.</p></li>
+                <li><span class="platos__n">19</span><h4>Carrot cake</h4><p data-t="carta.p19">Casera, y con capuccino mejor.</p></li>
+              </ol>
+            </div>
+          </div>
+          <div class="panel" role="tabpanel" id="p-picar" aria-labelledby="t-picar" tabindex="0" hidden style="--cinta:#2e6b45">
+            <div class="pagina pagina--izq">
+              <p class="pagina__cabecera" data-t="carta.cabecera">Misal de la casa</p>
+              <figure class="lamina"><img data-img="champagne" sizes="(min-width: 1024px) 26vw, 76vw" alt="Botella de champagne Alfred Gratien y copas sobre la barra de madera" data-ta="alt:alt.champagne"></figure>
+              <p class="pagina__rubrica" data-t="carta.r5">Para acompañar la primera ronda, y la segunda.</p>
+            </div>
+            <div class="pagina pagina--der">
+              <h3 class="pagina__titulo" data-t="carta.h5">Para picar</h3>
+              <ol class="platos">
+                <li><span class="platos__n">20</span><h4 data-t="carta.n20">Patatas artesanas</h4><p data-t="carta.p20">Para picar mientras llega la copa.</p></li>
+                <li><span class="platos__n">21</span><h4 data-t="carta.n21">Queso semicurado</h4><p data-t="carta.p21">Para compartir.</p></li>
+                <li><span class="platos__n">22</span><h4 data-t="carta.n22">Ensaladilla</h4><p data-t="carta.p22">De tapa, como manda la tradición.</p></li>
+                <li><span class="platos__n">23</span><h4 data-t="carta.n23">Tapas del día</h4><p data-t="carta.p23">Pregunte qué hay hoy.</p></li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -319,132 +369,153 @@
         <figure class="mueble confesion__foto revela" data-mueble>
           <span class="mueble__cornisa" aria-hidden="true"></span>
           <div class="mueble__hueco">
-            <img data-img="confesionario" sizes="(min-width: 1024px) 22vw, 54vw" alt="El confesionario de La Sacristía, con una casulla morada colgada">
+            <img data-img="confesionario" sizes="(min-width: 1024px) 22vw, 54vw" alt="El confesionario de La Sacristía, con una casulla morada colgada" data-ta="alt:alt.confesionario">
             <span class="mueble__hoja mueble__hoja--izq" aria-hidden="true"></span>
             <span class="mueble__hoja mueble__hoja--der" aria-hidden="true"></span>
           </div>
           <span class="mueble__zocalo" aria-hidden="true"></span>
         </figure>
         <div class="confesion__panel">
-          <p class="capitulo"><span>IV</span> El confesionario</p>
-          <h2 class="confesion__titulo" id="confesion-titulo">¿No sabe qué pedir? <em>Acérquese a la rejilla.</em></h2>
-          <p class="dialogo"><span>—Ave María Purísima.</span> <span>—Sin pecado concebida. ¿Qué le pide el cuerpo esta noche?</span></p>
+          <p class="capitulo"><span>IV</span> <b data-t="conf.cap">El confesionario</b></p>
+          <h2 class="confesion__titulo" id="confesion-titulo" data-t="conf.titulo">¿No sabe qué pedir? <em>Acérquese a la rejilla.</em></h2>
+          <p class="dialogo"><span data-t="conf.d1">—Ave María Purísima.</span> <span data-t="conf.d2">—Sin pecado concebida. ¿Qué le pide el cuerpo esta noche?</span></p>
           <ul class="pecados" data-pecados>
-            <li><button type="button" data-pecado="0">Algo fresco, cítrico y con burbujas</button></li>
-            <li><button type="button" data-pecado="1">Algo suave, cremoso, un poco goloso</button></li>
-            <li><button type="button" data-pecado="2">Amargo, de los de antes</button></li>
-            <li><button type="button" data-pecado="3">Burbujas: hay algo que celebrar</button></li>
-            <li><button type="button" data-pecado="4">Sin alcohol, que mañana madrugo</button></li>
-            <li><button type="button" data-pecado="5">Un café y algo dulce</button></li>
+            <li><button type="button" data-pecado="0" data-t="conf.o0">Algo fresco, cítrico y con burbujas</button></li>
+            <li><button type="button" data-pecado="1" data-t="conf.o1">Algo suave, cremoso, un poco goloso</button></li>
+            <li><button type="button" data-pecado="2" data-t="conf.o2">Amargo, de los de antes</button></li>
+            <li><button type="button" data-pecado="3" data-t="conf.o3">Burbujas: hay algo que celebrar</button></li>
+            <li><button type="button" data-pecado="4" data-t="conf.o4">Sin alcohol, que mañana madrugo</button></li>
+            <li><button type="button" data-pecado="5" data-t="conf.o5">Un café y algo dulce</button></li>
           </ul>
           <div class="absolucion" aria-live="polite" data-absolucion hidden>
-            <p class="absolucion__label">Absolución</p>
+            <p class="absolucion__label" data-t="conf.abs">Absolución</p>
             <p class="absolucion__copa" data-abs-copa></p>
             <p class="absolucion__desc" data-abs-desc></p>
-            <p class="absolucion__pen"><span>Penitencia:</span> <span data-abs-pen></span></p>
+            <p class="absolucion__pen"><span data-t="conf.pen">Penitencia:</span> <span data-abs-pen></span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ V · JUEVES ============ -->
+    <!-- ============ V · JUEVES: el tablón de avisos ============ -->
     <section class="jueves" id="jueves" aria-labelledby="jueves-titulo">
-      <figure class="jueves__foto">
-        <img data-img="microfono" sizes="(min-width: 1024px) 55vw, 100vw" alt="Micrófono vintage cromado iluminado con luces cálidas desenfocadas">
-      </figure>
-      <div class="jueves__texto">
-        <p class="capitulo"><span>V</span> Música en directo</p>
-        <h2 class="jueves__titulo" id="jueves-titulo"><span>Jueves</span> <span class="jueves__hora">22:00</span></h2>
-        <p class="jueves__lead revela">Cada jueves, voces en directo bajo los dorados. La agenda se anuncia en Instagram y las mesas vuelan: mejor reservar.</p>
-        <ul class="jueves__lista revela">
-          <li><span>Tardeo</span> jueves, viernes y sábado desde las 16:00</li>
-          <li><span>Noches señaladas</span> San Valentín, Feria de Abril, Nochevieja</li>
-          <li><span>En la casa</span> desfiles, lecturas y alguna sorpresa</li>
-        </ul>
-        <div class="jueves__ctas">
-          <a class="btn btn--oro" href="tel:+34865592759">Reservar para el jueves</a>
-          <a class="btn" href="https://www.instagram.com/lasacristiacafedenia/" target="_blank" rel="noopener">Ver la agenda en Instagram</a>
-        </div>
+      <div class="jueves__cabeza">
+        <p class="capitulo"><span>V</span> <b data-t="jueves.cap">Música en directo</b></p>
+        <p class="jueves__intro" data-t="jueves.intro">Lo que pasa en la casa, clavado en el tablón de la parroquia.</p>
+      </div>
+
+      <div class="tablon">
+        <article class="aviso aviso--grande">
+          <p class="aviso__kicker" data-t="jueves.kicker">Avisos parroquiales</p>
+          <h2 class="aviso__titulo" id="jueves-titulo"><span data-t="jueves.dia">Jueves</span> <span class="aviso__hora">22:00</span></h2>
+          <p class="aviso__fecha" data-proximo-jueves data-t="jueves.fecha">Todos los jueves</p>
+          <p class="aviso__texto" data-t="jueves.texto">Voces en directo bajo los dorados. Quién canta se anuncia cada semana en Instagram, y las mesas vuelan.</p>
+          <p class="aviso__firma" data-t="jueves.firma">Se ruega reservar.</p>
+        </article>
+
+        <figure class="clavada">
+          <img data-img="microfono" sizes="(min-width: 1024px) 34vw, 80vw" alt="Micrófono vintage cromado iluminado con luces cálidas desenfocadas" data-ta="alt:alt.microfono">
+          <figcaption data-t="jueves.foto">El micro, listo a las 22:00.</figcaption>
+        </figure>
+
+        <p class="nota nota--tardeo"><span data-t="jueves.n1t">Tardeo</span> <b data-t="jueves.n1">Jueves, viernes y sábado, desde las 16:00</b></p>
+        <p class="nota nota--senaladas"><span data-t="jueves.n2t">Noches señaladas</span> <b data-t="jueves.n2">San Valentín, Feria de Abril, Nochevieja</b></p>
+        <p class="nota nota--casa"><span data-t="jueves.n3t">En la casa</span> <b data-t="jueves.n3">Desfiles, lecturas y alguna sorpresa</b></p>
+      </div>
+
+      <div class="jueves__ctas">
+        <a class="btn btn--oro" href="tel:+34865592759" data-t="jueves.cta1">Reservar para el jueves</a>
+        <a class="btn" href="https://www.instagram.com/lasacristiacafedenia/" target="_blank" rel="noopener" data-t="jueves.cta2">Ver la agenda en Instagram</a>
       </div>
     </section>
 
-    <!-- ============ VI · FELIGRESES ============ -->
+    <!-- ============ VI · FELIGRESES: el libro de visitas ============ -->
     <section class="feligreses" aria-labelledby="feligreses-titulo">
-      <p class="capitulo"><span>VI</span> <span id="feligreses-titulo">Lo que dicen los feligreses</span></p>
-      <div class="citas" data-citas>
-        <figure class="cita is-activa">
-          <blockquote>«Un lugar mágico y único en Denia.»</blockquote>
-          <figcaption>Miriam M. · Google</figcaption>
-        </figure>
-        <figure class="cita">
-          <blockquote>«Nunca he estado en un bar tan hermoso.»</blockquote>
-          <figcaption>Alan W. · TripAdvisor (traducido del inglés)</figcaption>
-        </figure>
-        <figure class="cita">
-          <blockquote>«Local de copas decorado barroco espectacular.»</blockquote>
-          <figcaption>Jesús · Google</figcaption>
-        </figure>
-        <figure class="cita">
-          <blockquote>«¡Interior increíblemente creativo!»</blockquote>
-          <figcaption>Susan J. · TripAdvisor (traducido del inglés)</figcaption>
-        </figure>
+      <p class="capitulo"><span>VI</span> <b id="feligreses-titulo" data-t="fel.cap">Lo que dicen los feligreses</b></p>
+
+      <div class="libro revela">
+        <div class="libro__pagina">
+          <p class="libro__cabecera" data-t="fel.cabecera">Libro de visitas</p>
+          <figure class="firma">
+            <blockquote data-t="fel.q1">«Un lugar mágico y único en Denia.»</blockquote>
+            <figcaption><span class="firma__nombre">Miriam M.</span><span class="firma__fuente" data-t="fel.s1">Google</span></figcaption>
+          </figure>
+          <figure class="firma">
+            <blockquote data-t="fel.q2">«Nunca he estado en un bar tan hermoso.»</blockquote>
+            <figcaption><span class="firma__nombre">Alan W.</span><span class="firma__fuente" data-t="fel.s2">TripAdvisor · traducida del inglés</span></figcaption>
+          </figure>
+          <figure class="firma">
+            <blockquote data-t="fel.q3">«Es un lugar impresionante y no te lo puedes perder.»</blockquote>
+            <figcaption><span class="firma__nombre">Dolores M.</span><span class="firma__fuente" data-t="fel.s3">Google</span></figcaption>
+          </figure>
+        </div>
+        <div class="libro__pagina">
+          <figure class="firma">
+            <blockquote data-t="fel.q4">«Merece la pena visitarlo solo por la decoración.»</blockquote>
+            <figcaption><span class="firma__nombre">Martyn J.</span><span class="firma__fuente" data-t="fel.s4">TripAdvisor · traducida del inglés</span></figcaption>
+          </figure>
+          <figure class="firma">
+            <blockquote data-t="fel.q5">«Nos encantó, sorprendente decoración, con mucho gusto.»</blockquote>
+            <figcaption><span class="firma__nombre">Maribel LB</span><span class="firma__fuente" data-t="fel.s5">TripAdvisor</span></figcaption>
+          </figure>
+          <figure class="firma">
+            <blockquote data-t="fel.q6">«¡Interior increíblemente creativo!»</blockquote>
+            <figcaption><span class="firma__nombre">Susan J.</span><span class="firma__fuente" data-t="fel.s6">TripAdvisor · traducida del inglés</span></figcaption>
+          </figure>
+          <p class="libro__nota" data-t="fel.nota">Nota al margen: un viajero escribió que era como si Dalí hubiera rediseñado Versalles… en Dénia.</p>
+        </div>
+
+        <div class="sellos-tinta">
+          <a class="sello-tinta sello-tinta--google" href="https://www.google.com/maps/place/La+Sacrist%C3%ADa/@38.8397489,0.1061107,17z/data=!3m1!4b1!4m6!3m5!1s0x129e1b200be4fdaf:0xaf2538e7993e55a5!8m2!3d38.8397489!4d0.1061107" target="_blank" rel="noopener"><strong>4,6</strong><span>Google</span><small data-t="fel.g">487 reseñas</small></a>
+          <a class="sello-tinta sello-tinta--ta" href="https://www.tripadvisor.es/Restaurant_Review-g609043-d23637061-Reviews-La_Sacristia_Cafe-Denia_Costa_Blanca_Province_of_Alicante_Valencian_Community.html" target="_blank" rel="noopener" data-ta="href:fel.taHref"><strong>5,0</strong><span>TripAdvisor</span><small data-t="fel.t">24 opiniones</small></a>
+        </div>
       </div>
-      <div class="citas__nav" data-citas-nav>
-        <button type="button" class="flecha" data-cita="-1" aria-label="Cita anterior">←</button>
-        <span class="citas__cont" data-citas-cont>1 / 4</span>
-        <button type="button" class="flecha" data-cita="1" aria-label="Cita siguiente">→</button>
-      </div>
-      <p class="feligreses__dali">Hubo quien lo resumió así: como si Dalí hubiera redecorado Versalles… en Dénia.</p>
-      <ul class="notas">
-        <li><a href="https://www.google.com/maps/place/La+Sacrist%C3%ADa/@38.8397489,0.1061107,17z/data=!3m1!4b1!4m6!3m5!1s0x129e1b200be4fdaf:0xaf2538e7993e55a5!8m2!3d38.8397489!4d0.1061107" target="_blank" rel="noopener"><strong>4,6</strong><span>Google · 487 reseñas</span></a></li>
-        <li><a href="https://www.tripadvisor.es/Restaurant_Review-g609043-d23637061-Reviews-La_Sacristia_Cafe-Denia_Costa_Blanca_Province_of_Alicante_Valencian_Community.html" target="_blank" rel="noopener"><strong>5,0</strong><span>TripAdvisor · 24 opiniones</span></a></li>
-      </ul>
     </section>
 
     <!-- ============ VII · LA VISITA ============ -->
     <section class="visita" id="visita" aria-labelledby="visita-titulo">
       <figure class="exvoto visita__foto revela">
         <div class="exvoto__escena">
-          <img data-img="entrada" sizes="(min-width: 1024px) 32vw, 78vw" alt="La puerta abierta de La Sacristía bajo el rótulo «Café La Sacristía MMXXI», con el salón iluminado al fondo">
+          <img data-img="entrada" sizes="(min-width: 1024px) 32vw, 78vw" alt="La puerta abierta de La Sacristía bajo el rótulo «Café La Sacristía MMXXI», con el salón iluminado al fondo" data-ta="alt:alt.entrada">
         </div>
         <figcaption class="exvoto__texto">
           <span class="exvoto__titulo">Ex-voto</span>
-          Al viajero que buscaba en Dénia dónde tomar algo distinto: subió a lo alto de Marqués de Campo, entró por la calle Pare Pere, número 4, y vio el milagro.
-          <span class="exvoto__fecha">Dénia · año MMXXI</span>
+          <span data-t="visita.exvoto">Al viajero que buscaba en Dénia dónde tomar algo distinto: subió a lo alto de Marqués de Campo, entró por la calle Pare Pere, número 4, y vio el milagro.</span>
+          <span class="exvoto__fecha" data-t="visita.fecha">Dénia · año MMXXI</span>
         </figcaption>
       </figure>
       <div class="visita__info">
-        <p class="capitulo"><span>VII</span> La visita</p>
-        <h2 class="visita__titulo" id="visita-titulo">Pase <em>y vea.</em></h2>
+        <p class="capitulo"><span>VII</span> <b data-t="visita.cap">La visita</b></p>
+        <h2 class="visita__titulo" id="visita-titulo" data-t="visita.titulo">Pase <em>y vea.</em></h2>
         <address class="visita__dir">
           Carrer Pare Pere, 4<br>03700 Dénia, Alicante
-          <span>En el centro, a pocos pasos de lo alto de Marqués de Campo.</span>
+          <span data-t="visita.cerca">En el centro, a pocos pasos de lo alto de Marqués de Campo.</span>
         </address>
         <div class="visita__ctas">
-          <a class="btn btn--oro" href="tel:+34865592759">Llamar · 865 59 27 59</a>
-          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.8397489,0.1061107" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn--oro" href="tel:+34865592759" data-t="visita.llamar">Llamar · 865 59 27 59</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.8397489,0.1061107" target="_blank" rel="noopener" data-t="visita.llegar">Cómo llegar</a>
         </div>
 
         <table class="horario" data-horario>
-          <caption>Horario</caption>
+          <caption data-t="visita.horario">Horario</caption>
           <tbody>
-            <tr data-dia="1"><th scope="row">Lunes</th><td>17:00 – 01:00</td></tr>
-            <tr data-dia="2"><th scope="row">Martes</th><td>17:00 – 01:00</td></tr>
-            <tr data-dia="3"><th scope="row">Miércoles</th><td>17:00 – 01:00</td></tr>
-            <tr data-dia="4"><th scope="row">Jueves</th><td>16:00 – 02:00</td></tr>
-            <tr data-dia="5"><th scope="row">Viernes</th><td>16:00 – 02:00</td></tr>
-            <tr data-dia="6"><th scope="row">Sábado</th><td>16:00 – 02:00</td></tr>
-            <tr data-dia="0"><th scope="row">Domingo</th><td>17:00 – 23:00</td></tr>
+            <tr data-dia="1"><th scope="row" data-t="dia.1">Lunes</th><td>17:00 – 01:00</td></tr>
+            <tr data-dia="2"><th scope="row" data-t="dia.2">Martes</th><td>17:00 – 01:00</td></tr>
+            <tr data-dia="3"><th scope="row" data-t="dia.3">Miércoles</th><td>17:00 – 01:00</td></tr>
+            <tr data-dia="4"><th scope="row" data-t="dia.4">Jueves</th><td>16:00 – 02:00</td></tr>
+            <tr data-dia="5"><th scope="row" data-t="dia.5">Viernes</th><td>16:00 – 02:00</td></tr>
+            <tr data-dia="6"><th scope="row" data-t="dia.6">Sábado</th><td>16:00 – 02:00</td></tr>
+            <tr data-dia="0"><th scope="row" data-t="dia.0">Domingo</th><td>17:00 – 23:00</td></tr>
           </tbody>
         </table>
-        <p class="visita__aviso">Horario publicado por La Sacristía en abril de 2026. Puede variar en festivos y eventos.</p>
+        <p class="visita__aviso" data-t="visita.aviso">Horario publicado por La Sacristía en abril de 2026. Puede variar en festivos y eventos.</p>
 
         <ul class="datos">
-          <li><span>Reservas</span><a href="tel:+34865592759">865 59 27 59</a></li>
-          <li><span>Correo</span><a href="mailto:lasacristiadenia@hotmail.com">lasacristiadenia@hotmail.com</a></li>
+          <li><span data-t="datos.reservas">Reservas</span><a href="tel:+34865592759">865 59 27 59</a></li>
+          <li><span data-t="datos.correo">Correo</span><a href="mailto:lasacristiadenia@hotmail.com">lasacristiadenia@hotmail.com</a></li>
           <li><span>Instagram</span><a href="https://www.instagram.com/lasacristiacafedenia/" target="_blank" rel="noopener">@lasacristiacafedenia</a></li>
-          <li><span>Accesible</span>Entrada y aseo adaptados</li>
-          <li><span>Aparcar</span>Parkings públicos cercanos</li>
+          <li><span data-t="datos.accesibleT">Accesible</span><b data-t="datos.accesible">Entrada y aseo adaptados</b></li>
+          <li><span data-t="datos.aparcarT">Aparcar</span><b data-t="datos.aparcar">Parkings públicos cercanos</b></li>
         </ul>
       </div>
     </section>
@@ -452,14 +523,15 @@
 
   <footer class="pie">
     <p class="pie__marca">La Sacristía</p>
-    <p class="inscripcion">Café <i>·</i> Coctelería <i>·</i> Dénia <i>·</i> MMXXI</p>
-    <p class="pie__demo">Propuesta de diseño web (demo). Fotografías del local tomadas de su Google Maps, TripAdvisor e Instagram; micrófono y velas, provisionales de Unsplash.</p>
+    <p class="inscripcion" data-t="pie.inscripcion">Café <i>·</i> Coctelería <i>·</i> Dénia <i>·</i> MMXXI</p>
+    <p class="pie__idioma"><a href="en.html" hreflang="en" lang="en" data-ta="href:idioma.href,hreflang:idioma.hreflang,lang:idioma.lang" data-t="pie.idioma">Read in English</a></p>
+    <p class="pie__demo" data-t="pie.demo">Propuesta de diseño web (demo). Fotografías del local tomadas de su Google Maps, TripAdvisor e Instagram; micrófono y velas, provisionales de Unsplash.</p>
   </footer>
 
-  <nav class="barra-movil" aria-label="Acciones rápidas" data-barra>
-    <a href="tel:+34865592759">Reservar</a>
-    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=38.8397489,0.1061107" target="_blank" rel="noopener">Cómo llegar</a>
-    <a href="#carta">Carta</a>
+  <nav class="barra-movil" aria-label="Acciones rápidas" data-ta="aria-label:ui.barra" data-barra>
+    <a href="tel:+34865592759" data-t="barra.reservar">Reservar</a>
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=38.8397489,0.1061107" target="_blank" rel="noopener" data-t="barra.llegar">Cómo llegar</a>
+    <a href="#carta" data-t="barra.carta">Carta</a>
   </nav>
 
   <script src="main.js" defer></script>

@@ -59,3 +59,14 @@ Estampas con puntilla, confesionario con portezuelas de celosía y ex-voto de ho
 - 0 errores de consola.
 - Nota de QA: con `scroll-behavior: smooth`, `scrollIntoView` en las pruebas tarda en llegar a las secciones lejanas; las capturas se repitieron con scroll instantáneo. No afecta al usuario.
 - Publicado y verificado en https://alexsivera.github.io/la-sacristia-denia/ (390 y 1440 px): puntilla presente en las dos estampas, portezuelas abiertas (~104°), las cuatro fotos visibles y cargadas, sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
+
+## Cinco mejoras + versión inglesa — 05/11/2026
+Cajones del mostrador, ficha técnica, misal con cintas, tablón parroquial (con el stock del micro), libro de visitas y `en.html`. Comprobado en local con Playwright:
+- `npm run check` sobre las dos páginas: recursos, anclas, alt, JSON-LD, `<html lang>` correcto y sin marcas `data-t` publicadas. Ningún texto en español en `en.html` salvo nombres propios.
+- Sin scroll horizontal a 320, 390, 768 y 1440 px en ES y EN; ningún rótulo de cinta desborda (corregido «COCKTAILS» a 320 px).
+- Cintas del misal: clic y flechas del teclado; la página «pasa» al cambiar.
+- Selector de idioma ES ↔ EN (ida y vuelta), `hreflang` es/en/x-default.
+- JS en inglés: estado («Open now · until 02:00»), tablón («Tonight, Thursday 5 November»), ficha («Excellent. Open to the public until 02:00»), confesionario y menú («Close»).
+- Libro de visitas: corregido el margen de la última firma que dejaba una franja verde entre páginas; texto ajustado al pautado.
+- 0 errores de consola.
+- La página en móvil mide ≈ 14.000 px (antes 12.461): el misal, el tablón y el libro ocupan más que los bloques a los que sustituyen.

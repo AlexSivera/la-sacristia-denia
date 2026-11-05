@@ -15,6 +15,8 @@ npm run deploy     # build + check + publica dist/ en la rama gh-pages
 
 HTML, CSS y JS sin dependencias en `src/`. El build expande `<img data-img="nombre">` a `srcset` con las tallas generadas y escribe `dist/`.
 
+**Idiomas:** `dist/index.html` (español) y `dist/en.html` (inglés) salen del mismo `src/index.html`. El texto traducible lleva `data-t="clave"` (contenido) o `data-ta="atributo:clave"` (alt, aria-label, meta…); las traducciones están en `src/i18n/en.json` y el build se detiene si falta alguna. Los textos que genera el JS (horario, tablón, confesionario, sellos) están en `src/main.js`, objeto `T`.
+
 ## Pendiente de confirmar con el cliente
 - **Horario**: se usa el publicado en su Instagram (30/04/2026); Google Maps muestra otro (martes cerrado).
 - Recetas/descripciones del resto de aguas (Sacristía, Edén) y precios.

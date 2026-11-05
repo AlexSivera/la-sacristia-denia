@@ -14,6 +14,14 @@ El hero sale de un objeto físico del local, no de una plantilla. Arriba, la **c
 
 Se descartaron a propósito los esquemas de las otras demos del estudio: texto a la izquierda y foto en arco a la derecha (Boreal), fotos en círculo con marcadores numerados (Niki) y rótulo centrado sobre escaparate en paneles con franja inferior de CTA (Bernie’s). En toda la web no hay fotos con arco (el arco era la firma de Boreal): las fotos van a sangre o en marco dorado recto.
 
+## Cinco piezas añadidas (05/11/2026)
+- **Cajones del mostrador** (hero): bajo el nombre, tres cajones con portaetiquetas de latón y tirador —La carta · Agua de Dénia · Cómo llegar— sustituyen los paneles que repetían la historia del garaje.
+- **Ficha técnica** (museo): la historia del local contada como la cartela de una obra (Obra, Lugar, Técnica, Restauración, Procedencia, Año, Conservación). «Conservación» se actualiza con el horario: «Excelente. Abierta al público hasta las 02:00».
+- **El misal** (carta): un misal abierto sobre terciopelo, con filetes de rúbrica y capitular en el color de la sección. Las pestañas son cintas de punto de lectura en colores litúrgicos (carmesí, morado, blanco, verde) más una turquesa para las aguas; al tirar de una, la página pasa.
+- **El tablón parroquial** (jueves): tablón de corcho con chinchetas sobre pared de madera; el aviso calcula la fecha del próximo jueves (o «Hoy» si es jueves), la foto del micro (stock, se mantiene a propósito para la demo) va clavada y las notas de colores recogen tardeo, noches señaladas y eventos.
+- **El libro de visitas** (feligreses): libro de tela verde, papel pautado a 32 px con margen rojo, seis reseñas reales firmadas con su procedencia y dos sellos de tinta (Google 4,6 · TripAdvisor 5,0) que enlazan a las reseñas.
+- **ES · EN**: `en.html` se genera en el build desde el mismo HTML (`data-t` / `data-ta` + `src/i18n/en.json`), con selector en la cabecera, `hreflang` y sitemap. Las citas en inglés de Alan W., Martyn J. y Susan J. son sus originales; las traducidas del español lo indican.
+
 ## Personalidad y emoción
 Teatral, generosa, cómplice. Primero asombro ("¿esto está en Dénia?"), luego guiño (el confesionario recomienda copas), luego ganas de ir esta noche.
 
