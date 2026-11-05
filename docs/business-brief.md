@@ -37,7 +37,7 @@ Café de arte y coctelería en un antiguo garaje (de autobuses, según la prensa
 - Vitrina con joyas artesanales hechas con cubiertos, de la artista Natalia (respuesta del propietario en Google).
 
 ## El espacio (confirmado por fotos y reseñas)
-Paredes azul petróleo, terciopelo carmesí, marcos y soles dorados, querubines, bustos clásicos, flores, velas, lámparas de araña, mesas de mármol, sillones isabelinos. Una Inmaculada del s. XVII restaurada junto a la barra (Handwerksblatt). Un **confesionario** con casulla morada. Incienso antes de abrir (prensa). Una reseña cita salas "La Gloria" y "El Purgatorio"; el rótulo LA GLORIA se ve pintado en la pared de la sala del altar (fotos de Restaurant Guru), El Purgatorio sigue sin localizar → no se nombran en la web.
+Paredes azul petróleo, terciopelo carmesí, marcos y soles dorados, querubines, bustos clásicos, flores, velas, lámparas de araña, mesas de mármol, sillones isabelinos. Una Inmaculada del s. XVII restaurada junto a la barra (Handwerksblatt). Un **confesionario** con casulla morada. Incienso antes de abrir (prensa). Una reseña cita salas "La Gloria" y "El Purgatorio"; el rótulo LA GLORIA se ve pintado en la pared de la sala del altar (fotos de Restaurant Guru), así que la web la nombra en la cartela de la Inmaculada; El Purgatorio sigue sin localizar y no se nombra.
 
 ## Historia (prensa: Deutsches Handwerksblatt, 16/05/2025)
 Restauradores de mobiliario, pintura y arte antiguo que se conocieron restaurando el convento de San Antonio de Padua en Dénia. Piezas de rastros, anticuarios y particulares, de España y algunas de Francia e Inglaterra, restauradas por ellos. No se nombra a nadie en la web (Google indica "propiedad de mujeres", lo que no encaja del todo con la prensa: se omite).

@@ -18,6 +18,8 @@ const FOTOS = {
   // El canto del mostrador cae al 66 % de la altura: se recorta ahí.
   'hero-barra':       { src: 'ia/hero-barra-chatgpt.png', area: [0, 0, 1, 0.66], ratio: 1536 / 676, foco: [0.5, 1], grade: 'ia', sizes: [800, 1200, 1536] },
   'hero-barra-m':     { src: 'ia/hero-barra-chatgpt.png', area: [0.25, 0, 0.5, 0.66], ratio: 768 / 676, foco: [0.5, 1], grade: 'ia', sizes: [480, 768] },
+  'techo-plumas':     { src: 'resenas/jmm-4.jpg', ratio: 4 / 3, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
+  'confesionario-entero': { src: 'resenas/dolores-2.jpg', ratio: 3 / 4, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'joyas-natalia':    { src: 'resenas/miriam-1.jpg', ratio: 4 / 3, foco: [0.5, 0.44], grade: 'vela', sizes: [480, 800, 1200] },
   'salon-baldaquino': { src: 'real/maps-6.jpg', ratio: 3 / 4, foco: [0.56, 0.5], grade: 'vela', sizes: [480, 800, 1200] },
   'altar-inmaculada': { src: 'real/maps-5.jpg', ratio: 3 / 4, foco: [0.5, 0.5], grade: 'vela', sizes: [480, 800, 1200] },

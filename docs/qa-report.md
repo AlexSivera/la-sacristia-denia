@@ -92,3 +92,6 @@ Comprobado en local con Playwright a 1880, 1440 y 390 px (ES y EN):
 ## Vitrina de Natalia con foto real — 05/11/2026
 Investigadas Google Maps (11 fotos y las de 5 reseñas, vista limitada sin sesión), TripAdvisor, Restaurant Guru y Sluurpy. No aparece ninguna foto de la vitrina en sí; sí una de los anillos, en la reseña que la menciona. La pieza VII pasa de cartela vacía a cuadro con lámpara y se corrige el texto: se elimina que estén a la venta y que todas sean de cubiertos, porque no está confirmado.
 - Publicado y verificado en la URL pública (ES y EN, 390 y 1440 px): la foto de los anillos carga, el texto corregido aparece y ya no consta la venta; sin scroll horizontal, 0 errores de consola y 0 respuestas ≥ 400.
+
+## Inventario de ocho piezas — 05/11/2026
+Se añade el techo de las plumas (nº IV), el confesionario entero sustituye al primer plano en el inventario (nº III) y la cartela de la Inmaculada nombra la sala de La Gloria.
